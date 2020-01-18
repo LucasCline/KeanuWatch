@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3787288523D3BCD900F1702A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288423D3BCD900F1702A /* AppDelegate.swift */; };
+		3787288723D3BCD900F1702A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288623D3BCD900F1702A /* SceneDelegate.swift */; };
+		3787288923D3BCD900F1702A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288823D3BCD900F1702A /* ViewController.swift */; };
+		3787288C23D3BCD900F1702A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3787288A23D3BCD900F1702A /* Main.storyboard */; };
+		3787288E23D3BCDB00F1702A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3787288D23D3BCDB00F1702A /* Assets.xcassets */; };
+		3787289123D3BCDB00F1702A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3787288F23D3BCDB00F1702A /* LaunchScreen.storyboard */; };
+		3787289C23D3BCDB00F1702A /* KeanuWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787289B23D3BCDB00F1702A /* KeanuWatchTests.swift */; };
+		378728A723D3BCDB00F1702A /* KeanuWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378728A623D3BCDB00F1702A /* KeanuWatchUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3787289823D3BCDB00F1702A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3787287923D3BCD900F1702A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3787288023D3BCD900F1702A;
+			remoteInfo = KeanuWatch;
+		};
+		378728A323D3BCDB00F1702A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3787287923D3BCD900F1702A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3787288023D3BCD900F1702A;
+			remoteInfo = KeanuWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3787288123D3BCD900F1702A /* KeanuWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeanuWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3787288423D3BCD900F1702A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3787288623D3BCD900F1702A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3787288823D3BCD900F1702A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3787288B23D3BCD900F1702A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3787288D23D3BCDB00F1702A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3787289023D3BCDB00F1702A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3787289223D3BCDB00F1702A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3787289723D3BCDB00F1702A /* KeanuWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeanuWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3787289B23D3BCDB00F1702A /* KeanuWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeanuWatchTests.swift; sourceTree = "<group>"; };
+		3787289D23D3BCDB00F1702A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		378728A223D3BCDB00F1702A /* KeanuWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeanuWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		378728A623D3BCDB00F1702A /* KeanuWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeanuWatchUITests.swift; sourceTree = "<group>"; };
+		378728A823D3BCDB00F1702A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3787287E23D3BCD900F1702A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3787289423D3BCDB00F1702A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3787289F23D3BCDB00F1702A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3787287823D3BCD900F1702A = {
+			isa = PBXGroup;
+			children = (
+				3787288323D3BCD900F1702A /* KeanuWatch */,
+				3787289A23D3BCDB00F1702A /* KeanuWatchTests */,
+				378728A523D3BCDB00F1702A /* KeanuWatchUITests */,
+				3787288223D3BCD900F1702A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3787288223D3BCD900F1702A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3787288123D3BCD900F1702A /* KeanuWatch.app */,
+				3787289723D3BCDB00F1702A /* KeanuWatchTests.xctest */,
+				378728A223D3BCDB00F1702A /* KeanuWatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3787288323D3BCD900F1702A /* KeanuWatch */ = {
+			isa = PBXGroup;
+			children = (
+				3787288423D3BCD900F1702A /* AppDelegate.swift */,
+				3787288623D3BCD900F1702A /* SceneDelegate.swift */,
+				3787288823D3BCD900F1702A /* ViewController.swift */,
+				3787288A23D3BCD900F1702A /* Main.storyboard */,
+				3787288D23D3BCDB00F1702A /* Assets.xcassets */,
+				3787288F23D3BCDB00F1702A /* LaunchScreen.storyboard */,
+				3787289223D3BCDB00F1702A /* Info.plist */,
+			);
+			path = KeanuWatch;
+			sourceTree = "<group>";
+		};
+		3787289A23D3BCDB00F1702A /* KeanuWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				3787289B23D3BCDB00F1702A /* KeanuWatchTests.swift */,
+				3787289D23D3BCDB00F1702A /* Info.plist */,
+			);
+			path = KeanuWatchTests;
+			sourceTree = "<group>";
+		};
+		378728A523D3BCDB00F1702A /* KeanuWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				378728A623D3BCDB00F1702A /* KeanuWatchUITests.swift */,
+				378728A823D3BCDB00F1702A /* Info.plist */,
+			);
+			path = KeanuWatchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3787288023D3BCD900F1702A /* KeanuWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 378728AB23D3BCDB00F1702A /* Build configuration list for PBXNativeTarget "KeanuWatch" */;
+			buildPhases = (
+				3787287D23D3BCD900F1702A /* Sources */,
+				3787287E23D3BCD900F1702A /* Frameworks */,
+				3787287F23D3BCD900F1702A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeanuWatch;
+			productName = KeanuWatch;
+			productReference = 3787288123D3BCD900F1702A /* KeanuWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3787289623D3BCDB00F1702A /* KeanuWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 378728AE23D3BCDB00F1702A /* Build configuration list for PBXNativeTarget "KeanuWatchTests" */;
+			buildPhases = (
+				3787289323D3BCDB00F1702A /* Sources */,
+				3787289423D3BCDB00F1702A /* Frameworks */,
+				3787289523D3BCDB00F1702A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3787289923D3BCDB00F1702A /* PBXTargetDependency */,
+			);
+			name = KeanuWatchTests;
+			productName = KeanuWatchTests;
+			productReference = 3787289723D3BCDB00F1702A /* KeanuWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		378728A123D3BCDB00F1702A /* KeanuWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 378728B123D3BCDB00F1702A /* Build configuration list for PBXNativeTarget "KeanuWatchUITests" */;
+			buildPhases = (
+				3787289E23D3BCDB00F1702A /* Sources */,
+				3787289F23D3BCDB00F1702A /* Frameworks */,
+				378728A023D3BCDB00F1702A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				378728A423D3BCDB00F1702A /* PBXTargetDependency */,
+			);
+			name = KeanuWatchUITests;
+			productName = KeanuWatchUITests;
+			productReference = 378728A223D3BCDB00F1702A /* KeanuWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3787287923D3BCD900F1702A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Lucas Cline";
+				TargetAttributes = {
+					3787288023D3BCD900F1702A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					3787289623D3BCDB00F1702A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 3787288023D3BCD900F1702A;
+					};
+					378728A123D3BCDB00F1702A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 3787288023D3BCD900F1702A;
+					};
+				};
+			};
+			buildConfigurationList = 3787287C23D3BCD900F1702A /* Build configuration list for PBXProject "KeanuWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3787287823D3BCD900F1702A;
+			productRefGroup = 3787288223D3BCD900F1702A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3787288023D3BCD900F1702A /* KeanuWatch */,
+				3787289623D3BCDB00F1702A /* KeanuWatchTests */,
+				378728A123D3BCDB00F1702A /* KeanuWatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3787287F23D3BCD900F1702A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3787289123D3BCDB00F1702A /* LaunchScreen.storyboard in Resources */,
+				3787288E23D3BCDB00F1702A /* Assets.xcassets in Resources */,
+				3787288C23D3BCD900F1702A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3787289523D3BCDB00F1702A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		378728A023D3BCDB00F1702A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3787287D23D3BCD900F1702A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3787288923D3BCD900F1702A /* ViewController.swift in Sources */,
+				3787288523D3BCD900F1702A /* AppDelegate.swift in Sources */,
+				3787288723D3BCD900F1702A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3787289323D3BCDB00F1702A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3787289C23D3BCDB00F1702A /* KeanuWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3787289E23D3BCDB00F1702A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378728A723D3BCDB00F1702A /* KeanuWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3787289923D3BCDB00F1702A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3787288023D3BCD900F1702A /* KeanuWatch */;
+			targetProxy = 3787289823D3BCDB00F1702A /* PBXContainerItemProxy */;
+		};
+		378728A423D3BCDB00F1702A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3787288023D3BCD900F1702A /* KeanuWatch */;
+			targetProxy = 378728A323D3BCDB00F1702A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3787288A23D3BCD900F1702A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3787288B23D3BCD900F1702A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3787288F23D3BCDB00F1702A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3787289023D3BCDB00F1702A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		378728A923D3BCDB00F1702A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		378728AA23D3BCDB00F1702A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		378728AC23D3BCDB00F1702A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeanuWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LucasCline.KeanuWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		378728AD23D3BCDB00F1702A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeanuWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LucasCline.KeanuWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		378728AF23D3BCDB00F1702A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeanuWatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LucasCline.KeanuWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeanuWatch.app/KeanuWatch";
+			};
+			name = Debug;
+		};
+		378728B023D3BCDB00F1702A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeanuWatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LucasCline.KeanuWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeanuWatch.app/KeanuWatch";
+			};
+			name = Release;
+		};
+		378728B223D3BCDB00F1702A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeanuWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LucasCline.KeanuWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeanuWatch;
+			};
+			name = Debug;
+		};
+		378728B323D3BCDB00F1702A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeanuWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LucasCline.KeanuWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeanuWatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3787287C23D3BCD900F1702A /* Build configuration list for PBXProject "KeanuWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378728A923D3BCDB00F1702A /* Debug */,
+				378728AA23D3BCDB00F1702A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		378728AB23D3BCDB00F1702A /* Build configuration list for PBXNativeTarget "KeanuWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378728AC23D3BCDB00F1702A /* Debug */,
+				378728AD23D3BCDB00F1702A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		378728AE23D3BCDB00F1702A /* Build configuration list for PBXNativeTarget "KeanuWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378728AF23D3BCDB00F1702A /* Debug */,
+				378728B023D3BCDB00F1702A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		378728B123D3BCDB00F1702A /* Build configuration list for PBXNativeTarget "KeanuWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378728B223D3BCDB00F1702A /* Debug */,
+				378728B323D3BCDB00F1702A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3787287923D3BCD900F1702A /* Project object */;
+}
