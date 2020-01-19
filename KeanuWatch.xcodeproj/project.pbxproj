@@ -17,6 +17,7 @@
 		378728B523D3C96400F1702A /* HomeScreenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378728B423D3C96400F1702A /* HomeScreenTableViewController.swift */; };
 		378728BA23D3C9DD00F1702A /* HomeScreenTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378728B923D3C9DD00F1702A /* HomeScreenTableViewDelegate.swift */; };
 		378728BD23D3D12700F1702A /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378728BC23D3D12700F1702A /* NetworkingManager.swift */; };
+		378728C023D4B17900F1702A /* KeanuArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378728BF23D4B17900F1702A /* KeanuArticle.swift */; };
 		A113067230E5E60FB2BAD2F9 /* Pods_KeanuWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E092E02B6A51B847A30F023E /* Pods_KeanuWatch.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		378728B423D3C96400F1702A /* HomeScreenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTableViewController.swift; sourceTree = "<group>"; };
 		378728B923D3C9DD00F1702A /* HomeScreenTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTableViewDelegate.swift; sourceTree = "<group>"; };
 		378728BC23D3D12700F1702A /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		378728BF23D4B17900F1702A /* KeanuArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeanuArticle.swift; sourceTree = "<group>"; };
 		B1466C60BC47FC2DF5E3248F /* Pods-KeanuWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeanuWatch.debug.xcconfig"; path = "Target Support Files/Pods-KeanuWatch/Pods-KeanuWatch.debug.xcconfig"; sourceTree = "<group>"; };
 		E092E02B6A51B847A30F023E /* Pods_KeanuWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeanuWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 		3787288323D3BCD900F1702A /* KeanuWatch */ = {
 			isa = PBXGroup;
 			children = (
+				378728BE23D4B16700F1702A /* Models */,
 				378728BB23D3D07D00F1702A /* Networking */,
 				378728B723D3C9B100F1702A /* Storyboards */,
 				378728B623D3C99500F1702A /* ViewControllers */,
@@ -171,6 +174,14 @@
 				378728BC23D3D12700F1702A /* NetworkingManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		378728BE23D4B16700F1702A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				378728BF23D4B17900F1702A /* KeanuArticle.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		38DA45C366C69690E2A0B9B9 /* Pods */ = {
@@ -366,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3787288523D3BCD900F1702A /* AppDelegate.swift in Sources */,
+				378728C023D4B17900F1702A /* KeanuArticle.swift in Sources */,
 				378728BA23D3C9DD00F1702A /* HomeScreenTableViewDelegate.swift in Sources */,
 				378728B523D3C96400F1702A /* HomeScreenTableViewController.swift in Sources */,
 				378728BD23D3D12700F1702A /* NetworkingManager.swift in Sources */,
