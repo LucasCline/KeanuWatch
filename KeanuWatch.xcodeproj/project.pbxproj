@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3787288523D3BCD900F1702A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288423D3BCD900F1702A /* AppDelegate.swift */; };
 		3787288723D3BCD900F1702A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288623D3BCD900F1702A /* SceneDelegate.swift */; };
-		3787288923D3BCD900F1702A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288823D3BCD900F1702A /* ViewController.swift */; };
 		3787288C23D3BCD900F1702A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3787288A23D3BCD900F1702A /* Main.storyboard */; };
 		3787288E23D3BCDB00F1702A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3787288D23D3BCDB00F1702A /* Assets.xcassets */; };
 		3787289123D3BCDB00F1702A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3787288F23D3BCDB00F1702A /* LaunchScreen.storyboard */; };
 		3787289C23D3BCDB00F1702A /* KeanuWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787289B23D3BCDB00F1702A /* KeanuWatchTests.swift */; };
 		378728A723D3BCDB00F1702A /* KeanuWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378728A623D3BCDB00F1702A /* KeanuWatchUITests.swift */; };
+		378728B523D3C96400F1702A /* HomeScreenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378728B423D3C96400F1702A /* HomeScreenTableViewController.swift */; };
+		378728BA23D3C9DD00F1702A /* HomeScreenTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378728B923D3C9DD00F1702A /* HomeScreenTableViewDelegate.swift */; };
+		378728BD23D3D12700F1702A /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378728BC23D3D12700F1702A /* NetworkingManager.swift */; };
 		A113067230E5E60FB2BAD2F9 /* Pods_KeanuWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E092E02B6A51B847A30F023E /* Pods_KeanuWatch.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +42,6 @@
 		3787288123D3BCD900F1702A /* KeanuWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeanuWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3787288423D3BCD900F1702A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3787288623D3BCD900F1702A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3787288823D3BCD900F1702A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3787288B23D3BCD900F1702A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3787288D23D3BCDB00F1702A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3787289023D3BCDB00F1702A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		378728A223D3BCDB00F1702A /* KeanuWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeanuWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		378728A623D3BCDB00F1702A /* KeanuWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeanuWatchUITests.swift; sourceTree = "<group>"; };
 		378728A823D3BCDB00F1702A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		378728B423D3C96400F1702A /* HomeScreenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTableViewController.swift; sourceTree = "<group>"; };
+		378728B923D3C9DD00F1702A /* HomeScreenTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTableViewDelegate.swift; sourceTree = "<group>"; };
+		378728BC23D3D12700F1702A /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		B1466C60BC47FC2DF5E3248F /* Pods-KeanuWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeanuWatch.debug.xcconfig"; path = "Target Support Files/Pods-KeanuWatch/Pods-KeanuWatch.debug.xcconfig"; sourceTree = "<group>"; };
 		E092E02B6A51B847A30F023E /* Pods_KeanuWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeanuWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,10 +110,11 @@
 		3787288323D3BCD900F1702A /* KeanuWatch */ = {
 			isa = PBXGroup;
 			children = (
+				378728BB23D3D07D00F1702A /* Networking */,
+				378728B723D3C9B100F1702A /* Storyboards */,
+				378728B623D3C99500F1702A /* ViewControllers */,
 				3787288423D3BCD900F1702A /* AppDelegate.swift */,
 				3787288623D3BCD900F1702A /* SceneDelegate.swift */,
-				3787288823D3BCD900F1702A /* ViewController.swift */,
-				3787288A23D3BCD900F1702A /* Main.storyboard */,
 				3787288D23D3BCDB00F1702A /* Assets.xcassets */,
 				3787288F23D3BCDB00F1702A /* LaunchScreen.storyboard */,
 				3787289223D3BCDB00F1702A /* Info.plist */,
@@ -135,13 +140,45 @@
 			path = KeanuWatchUITests;
 			sourceTree = "<group>";
 		};
+		378728B623D3C99500F1702A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				378728B823D3C9C400F1702A /* Delegates */,
+				378728B423D3C96400F1702A /* HomeScreenTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		378728B723D3C9B100F1702A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3787288A23D3BCD900F1702A /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		378728B823D3C9C400F1702A /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				378728B923D3C9DD00F1702A /* HomeScreenTableViewDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		378728BB23D3D07D00F1702A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				378728BC23D3D12700F1702A /* NetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		38DA45C366C69690E2A0B9B9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				B1466C60BC47FC2DF5E3248F /* Pods-KeanuWatch.debug.xcconfig */,
 				2421510C90E9CFF89A9EABC8 /* Pods-KeanuWatch.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -328,8 +365,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3787288923D3BCD900F1702A /* ViewController.swift in Sources */,
 				3787288523D3BCD900F1702A /* AppDelegate.swift in Sources */,
+				378728BA23D3C9DD00F1702A /* HomeScreenTableViewDelegate.swift in Sources */,
+				378728B523D3C96400F1702A /* HomeScreenTableViewController.swift in Sources */,
+				378728BD23D3D12700F1702A /* NetworkingManager.swift in Sources */,
 				3787288723D3BCD900F1702A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,7 +551,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = LucasCline.KeanuWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -530,7 +569,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = LucasCline.KeanuWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

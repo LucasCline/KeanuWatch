@@ -3,37 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0038B45E0B08D47721C23FF6D144921C /* Pods-KeanuWatch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD96547D748006476C9697C5EEF5C42D /* Pods-KeanuWatch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D01BA8472F25D39F718F71557EDC8DD /* ParameterEncoding.swift */; };
 		132E0F619E4338E5D1B27E4C72076B3F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06639F7A76DB8A9D0D0E41CDD7A6684 /* Notifications.swift */; };
+		1699A2FEA177B8F64D038C9882878003 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		1945CD5D63A1C164AEAAA9A33E85571E /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 341BDAD0026CDA8E7BCE35AC122E1C8C /* Alamofire-dummy.m */; };
 		1986B50C74F1697EA43F68335C93CEB3 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE3D7EDCA41F256D471B40BBFD3FCE /* MultipartFormData.swift */; };
-		1A1FFF24C37113B38B6E6C521316C149 /* Pods-KeanuWatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A2D86A124F4F3F1EA39BB1627D1738 /* Pods-KeanuWatch-dummy.m */; };
 		2C61B040BA6A9A7AE66C4D9BA26D5520 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F61D5BEE8132009BAEAA65B587A4 /* SessionDelegate.swift */; };
 		3571F958A3907B3A806E62D50C2550D4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5460AD0F6241621B45A17AB23A8E5B7 /* NetworkReachabilityManager.swift */; };
-		48D238D14618949622D9A9BDEB766050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4CECB61D640B5F8B5BE3BC97FADBB3C3 /* Pods-KeanuWatch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD96547D748006476C9697C5EEF5C42D /* Pods-KeanuWatch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53791F5E5F07400F92CFDFC89A432305 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33115EC2A5164913C68F8BD170389EEE /* Validation.swift */; };
+		5B9344767B4860559FF58E211BCF1F25 /* KeanuWatchKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 83538DF40689570462523751E5DDC238 /* KeanuWatchKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64744C911253C3E01461FAD7C935C8D7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD807F155301ECA538A2C1C296E1186D /* Result.swift */; };
+		7563DED44634D7EF6856CB89122CD940 /* Keys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FCA5011875A325B0FF7BBA4F3C4F9B /* Keys-dummy.m */; };
 		7664FD4F59A0C00866CBAE60B0A3AD64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		83956E20859CDBBE7BC38ABADE0170FB /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A0E300C04A6DF88D620788FE38780 /* AFError.swift */; };
 		931BBB8230A25161D5C37528A8F9FECF /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7E25E371731FAE44F46A9F392CB5D5 /* SessionManager.swift */; };
 		933FDA5970AA525D6CB92BFEBA2BAB4A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB5272AD01ECD0B09A86818A7754C4 /* Timeline.swift */; };
+		94553AA2109584C3072CEE690499D92D /* Keys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3007DBE01F6076C8E2EDF0D5A416C49B /* Keys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98A929C8E9012AB167672714FFD2113C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59E1AD3CC394A93392FF3DC8CF2961 /* Request.swift */; };
+		A2B7C020845768F880758170866514EC /* KeanuWatchKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E6B67390C0357A8C5B0983B22E1654 /* KeanuWatchKeys.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		AFC64B1097F7355FF423D6A73E9C7210 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C759635F88377BD7E2DEDE04C23C62 /* TaskDelegate.swift */; };
 		BEE6B677416CA71C981D1D3F60B18C96 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C15C076B531E2E7744C358418A0C0B5 /* Alamofire.swift */; };
 		D3D8C379C6E4FB487E5ABD6800AD7B7E /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7F7716086D54E6308EE52C8227B87 /* DispatchQueue+Alamofire.swift */; };
 		D65C254F5ABF2CB5ECEE50FE8F8E1A80 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC6858C85690F7AFEA7F6542EE9A69A /* Response.swift */; };
 		E3747EC31FCCA97D75A81FC700CF7E24 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03859BDC36782899379E222720A297 /* ResponseSerialization.swift */; };
+		E6DCD64F6B4AFA79963F897C171AE10A /* Pods-KeanuWatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A2D86A124F4F3F1EA39BB1627D1738 /* Pods-KeanuWatch-dummy.m */; };
+		E73F959CEF489085611499F180FBFC67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		F13F2AA7F2E6D95A181CAB99B900D531 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4453BE339B79900FDC53E34FE5589CB /* ServerTrustPolicy.swift */; };
 		F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D54AEF5647A987180EDAD7E1CEF7387B /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		411A6EA992441F6A9CA36198EAD20CD0 /* PBXContainerItemProxy */ = {
+		70D64C8C8A45B0AA8A0EB7BFED21D1D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CE75F0DCD94A1A113665B974F74795F;
+			remoteInfo = Keys;
+		};
+		E15D5C058407CA2E010C770B81376B2B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -44,8 +56,12 @@
 
 /* Begin PBXFileReference section */
 		0D01BA8472F25D39F718F71557EDC8DD /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		16E6B67390C0357A8C5B0983B22E1654 /* KeanuWatchKeys.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KeanuWatchKeys.m; sourceTree = "<group>"; };
+		1ABCDF8650AC225F7187D8609B26FA5C /* Keys.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		1C15C076B531E2E7744C358418A0C0B5 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		1C4FEA435A2B102D915B0194FAAE899A /* Keys-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Keys-Info.plist"; sourceTree = "<group>"; };
 		2434266C18FB0AC0D5DA8754BA328074 /* Pods-KeanuWatch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeanuWatch-acknowledgements.plist"; sourceTree = "<group>"; };
+		3007DBE01F6076C8E2EDF0D5A416C49B /* Keys-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keys-umbrella.h"; sourceTree = "<group>"; };
 		303689D97CA0F179EC16D7E15CF2029B /* Pods-KeanuWatch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeanuWatch-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32A2D86A124F4F3F1EA39BB1627D1738 /* Pods-KeanuWatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeanuWatch-dummy.m"; sourceTree = "<group>"; };
@@ -56,9 +72,12 @@
 		523844B6B70DF300D7D72B2D811D62FD /* Pods_KeanuWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KeanuWatch.framework; path = "Pods-KeanuWatch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BED50C970FC3F102E74E78D42BD1337 /* Pods-KeanuWatch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeanuWatch.modulemap"; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63612B6A1DAF81654B2A47FE4ADE6506 /* Keys.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Keys.modulemap; sourceTree = "<group>"; };
 		75C759635F88377BD7E2DEDE04C23C62 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		7B03859BDC36782899379E222720A297 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		83538DF40689570462523751E5DDC238 /* KeanuWatchKeys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KeanuWatchKeys.h; sourceTree = "<group>"; };
 		8D5A0E300C04A6DF88D620788FE38780 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		8F207D2AF0692074E9C46D76406FF728 /* Keys.podspec.json */ = {isa = PBXFileReference; includeInIndex = 1; path = Keys.podspec.json; sourceTree = "<group>"; };
 		985417470B9341C92A5160D4B2FF2B08 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		9D59E1AD3CC394A93392FF3DC8CF2961 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -66,6 +85,7 @@
 		AE6BE365940A6FB07ABB0E6EC4AE7FF5 /* Pods-KeanuWatch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KeanuWatch-frameworks.sh"; sourceTree = "<group>"; };
 		AFF7F7716086D54E6308EE52C8227B87 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		B06639F7A76DB8A9D0D0E41CDD7A6684 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		B10F436B79E4EE59FF34ECA717419600 /* Keys-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keys-prefix.pch"; sourceTree = "<group>"; };
 		B45BD30A330E6C305C61CFC107F26584 /* Pods-KeanuWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeanuWatch.release.xcconfig"; sourceTree = "<group>"; };
 		BD96547D748006476C9697C5EEF5C42D /* Pods-KeanuWatch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeanuWatch-umbrella.h"; sourceTree = "<group>"; };
 		BFCE3D7EDCA41F256D471B40BBFD3FCE /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
@@ -76,7 +96,9 @@
 		D54AEF5647A987180EDAD7E1CEF7387B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		DD807F155301ECA538A2C1C296E1186D /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		DE36AED4DF687B2D37BD230D9D2F69B6 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		E8CACB8744373C1818777FFB8F84C67E /* Keys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Keys.framework; path = Keys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABFF2EDEE88B731D7F316D6616E2488 /* Pods-KeanuWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeanuWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		F4FCA5011875A325B0FF7BBA4F3C4F9B /* Keys-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Keys-dummy.m"; sourceTree = "<group>"; };
 		F5460AD0F6241621B45A17AB23A8E5B7 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		F640F61D5BEE8132009BAEAA65B587A4 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,17 +112,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79066CF46DB11C8131D93F521CF68559 /* Frameworks */ = {
+		71A809247D8DEEAA3A3C47C79BCACD81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48D238D14618949622D9A9BDEB766050 /* Foundation.framework in Frameworks */,
+				E73F959CEF489085611499F180FBFC67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		922F925E12B3BC3FA3849031926595A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1699A2FEA177B8F64D038C9882878003 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		054140005F2AE56CBD51D74A19ACBEB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				E8CACB8744373C1818777FFB8F84C67E /* Keys.framework */,
+				523844B6B70DF300D7D72B2D811D62FD /* Pods_KeanuWatch.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5C26875CAEBEFEDA19F66418CD7AE5DB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,13 +163,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8A323075E03913CB487508106C09E5C2 /* Products */ = {
+		83EEB4A7B07420ABC3B5F14638ABE6F7 /* Keys */ = {
 			isa = PBXGroup;
 			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
-				523844B6B70DF300D7D72B2D811D62FD /* Pods_KeanuWatch.framework */,
+				83538DF40689570462523751E5DDC238 /* KeanuWatchKeys.h */,
+				16E6B67390C0357A8C5B0983B22E1654 /* KeanuWatchKeys.m */,
+				BE49903159042C62D894224DDC69EC2D /* Pod */,
+				AECD650E2F504224CDCC2C98B876FA22 /* Support Files */,
 			);
-			name = Products;
+			name = Keys;
+			path = CocoaPodsKeys;
 			sourceTree = "<group>";
 		};
 		90FDDC7F5D24472360CA259A8D40AE98 /* Pods */ = {
@@ -138,6 +181,14 @@
 				ABBD6121E62B33A53CF07892A75F2030 /* Alamofire */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		918C67CEDF38AB6FC9603B3803A92E0F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83EEB4A7B07420ABC3B5F14638ABE6F7 /* Keys */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		ABBD6121E62B33A53CF07892A75F2030 /* Alamofire */ = {
@@ -164,6 +215,28 @@
 			);
 			name = Alamofire;
 			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		AECD650E2F504224CDCC2C98B876FA22 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				63612B6A1DAF81654B2A47FE4ADE6506 /* Keys.modulemap */,
+				1ABCDF8650AC225F7187D8609B26FA5C /* Keys.xcconfig */,
+				F4FCA5011875A325B0FF7BBA4F3C4F9B /* Keys-dummy.m */,
+				1C4FEA435A2B102D915B0194FAAE899A /* Keys-Info.plist */,
+				B10F436B79E4EE59FF34ECA717419600 /* Keys-prefix.pch */,
+				3007DBE01F6076C8E2EDF0D5A416C49B /* Keys-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Keys";
+			sourceTree = "<group>";
+		};
+		BE49903159042C62D894224DDC69EC2D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8F207D2AF0692074E9C46D76406FF728 /* Keys.podspec.json */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -195,9 +268,10 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				918C67CEDF38AB6FC9603B3803A92E0F /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				90FDDC7F5D24472360CA259A8D40AE98 /* Pods */,
-				8A323075E03913CB487508106C09E5C2 /* Products */,
+				054140005F2AE56CBD51D74A19ACBEB9 /* Products */,
 				707407808787C64DA03BAFBC7942FDD0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -221,11 +295,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63FC7831170299AD2F742ABA3B763BD7 /* Headers */ = {
+		CD0EE1E1A19E8600BBC9840780B175EE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CECB61D640B5F8B5BE3BC97FADBB3C3 /* Pods-KeanuWatch-umbrella.h in Headers */,
+				5B9344767B4860559FF58E211BCF1F25 /* KeanuWatchKeys.h in Headers */,
+				94553AA2109584C3072CEE690499D92D /* Keys-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E24B5AE48E8EB8BB679723578487AE9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0038B45E0B08D47721C23FF6D144921C /* Pods-KeanuWatch-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,21 +317,40 @@
 /* Begin PBXNativeTarget section */
 		324A27E99837B54409290831BA2B390C /* Pods-KeanuWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37CE56EFE439599D8DCA762B16B43694 /* Build configuration list for PBXNativeTarget "Pods-KeanuWatch" */;
+			buildConfigurationList = 6B286699E651F9A9245DD255982CA041 /* Build configuration list for PBXNativeTarget "Pods-KeanuWatch" */;
 			buildPhases = (
-				63FC7831170299AD2F742ABA3B763BD7 /* Headers */,
-				331651171E8D96BA2EE5E3EB4FA94572 /* Sources */,
-				79066CF46DB11C8131D93F521CF68559 /* Frameworks */,
-				9A4984367A51F57CCABF5E8B9F6D1BBB /* Resources */,
+				E24B5AE48E8EB8BB679723578487AE9D /* Headers */,
+				F233D8C83F1DACF5773982F4F3C5178A /* Sources */,
+				71A809247D8DEEAA3A3C47C79BCACD81 /* Frameworks */,
+				3B71B1FD7703D685FA0976FC700AC702 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F9631A2E5A7E6D7868533BAB4B7DBEC0 /* PBXTargetDependency */,
+				0F0D78216AB44D0B3B490F8C93F9C5CF /* PBXTargetDependency */,
+				7E045AB140AC74E54207A640EA1541AE /* PBXTargetDependency */,
 			);
 			name = "Pods-KeanuWatch";
 			productName = "Pods-KeanuWatch";
 			productReference = 523844B6B70DF300D7D72B2D811D62FD /* Pods_KeanuWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5CE75F0DCD94A1A113665B974F74795F /* Keys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795CB2150073E63FDFE236FC26037B45 /* Build configuration list for PBXNativeTarget "Keys" */;
+			buildPhases = (
+				CD0EE1E1A19E8600BBC9840780B175EE /* Headers */,
+				8EE970DEC07F498B423B9667D4D42081 /* Sources */,
+				922F925E12B3BC3FA3849031926595A0 /* Frameworks */,
+				578B49FAC5467E628C7F79081E2652E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keys;
+			productName = Keys;
+			productReference = E8CACB8744373C1818777FFB8F84C67E /* Keys.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
@@ -279,7 +381,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -287,17 +389,25 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 8A323075E03913CB487508106C09E5C2 /* Products */;
+			productRefGroup = 054140005F2AE56CBD51D74A19ACBEB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				5CE75F0DCD94A1A113665B974F74795F /* Keys */,
 				324A27E99837B54409290831BA2B390C /* Pods-KeanuWatch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3B71B1FD7703D685FA0976FC700AC702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		473D3E892ABB6C798CFF290644259B34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,7 +415,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A4984367A51F57CCABF5E8B9F6D1BBB /* Resources */ = {
+		578B49FAC5467E628C7F79081E2652E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,29 +450,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		331651171E8D96BA2EE5E3EB4FA94572 /* Sources */ = {
+		8EE970DEC07F498B423B9667D4D42081 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A1FFF24C37113B38B6E6C521316C149 /* Pods-KeanuWatch-dummy.m in Sources */,
+				A2B7C020845768F880758170866514EC /* KeanuWatchKeys.m in Sources */,
+				7563DED44634D7EF6856CB89122CD940 /* Keys-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F233D8C83F1DACF5773982F4F3C5178A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6DCD64F6B4AFA79963F897C171AE10A /* Pods-KeanuWatch-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F9631A2E5A7E6D7868533BAB4B7DBEC0 /* PBXTargetDependency */ = {
+		0F0D78216AB44D0B3B490F8C93F9C5CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = 411A6EA992441F6A9CA36198EAD20CD0 /* PBXContainerItemProxy */;
+			targetProxy = E15D5C058407CA2E010C770B81376B2B /* PBXContainerItemProxy */;
+		};
+		7E045AB140AC74E54207A640EA1541AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Keys;
+			target = 5CE75F0DCD94A1A113665B974F74795F /* Keys */;
+			targetProxy = 70D64C8C8A45B0AA8A0EB7BFED21D1D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		31F482ED4063D79A0FCA653F37014F1A /* Debug */ = {
+		2E510CA05B2DAE823189E9C4EB52A46B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EABFF2EDEE88B731D7F316D6616E2488 /* Pods-KeanuWatch.debug.xcconfig */;
+			baseConfigurationReference = 1ABCDF8650AC225F7187D8609B26FA5C /* Keys.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Keys/Keys-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Keys/Keys-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Keys/Keys.modulemap";
+				PRODUCT_MODULE_NAME = Keys;
+				PRODUCT_NAME = Keys;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5885B4C760351CD74BA711D237A5DEBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45BD30A330E6C305C61CFC107F26584 /* Pods-KeanuWatch.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -392,10 +553,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		75BBB760DFD877E344322B54D29DFE64 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -426,6 +588,41 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		851CA477C4BE5574855B4318000F02FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ABCDF8650AC225F7187D8609B26FA5C /* Keys.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Keys/Keys-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Keys/Keys-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Keys/Keys.modulemap";
+				PRODUCT_MODULE_NAME = Keys;
+				PRODUCT_NAME = Keys;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -556,9 +753,9 @@
 			};
 			name = Debug;
 		};
-		96965FD7008DF15362A9A4FA15BAA3AB /* Release */ = {
+		C401E88F639DD4C18E632F05A050D9F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B45BD30A330E6C305C61CFC107F26584 /* Pods-KeanuWatch.release.xcconfig */;
+			baseConfigurationReference = EABFF2EDEE88B731D7F316D6616E2488 /* Pods-KeanuWatch.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -588,11 +785,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		F94FD07C591B17B7E61A1528AB9BCB3B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -633,20 +829,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37CE56EFE439599D8DCA762B16B43694 /* Build configuration list for PBXNativeTarget "Pods-KeanuWatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				31F482ED4063D79A0FCA653F37014F1A /* Debug */,
-				96965FD7008DF15362A9A4FA15BAA3AB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				916E0404255105F480DC4950B7625F7A /* Debug */,
 				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B286699E651F9A9245DD255982CA041 /* Build configuration list for PBXNativeTarget "Pods-KeanuWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C401E88F639DD4C18E632F05A050D9F0 /* Debug */,
+				5885B4C760351CD74BA711D237A5DEBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		795CB2150073E63FDFE236FC26037B45 /* Build configuration list for PBXNativeTarget "Keys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851CA477C4BE5574855B4318000F02FC /* Debug */,
+				2E510CA05B2DAE823189E9C4EB52A46B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

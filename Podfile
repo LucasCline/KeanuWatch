@@ -8,4 +8,12 @@ target 'KeanuWatch' do
   # Pods for KeanuWatch
   pod 'Alamofire'
 
+plugin 'cocoapods-keys', {
+  :project => "KeanuWatch",
+  :target => "KeanuWatch",
+  :keys => [
+    "NewsAPIKey"
+  ]
+}
+
 end
