@@ -42,6 +42,7 @@ class HomeScreenTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDat
         cell.title.text = article.title
         cell.articleImage.image = UIImage(named: "Keanu")
         
+        //if a cached version of the image exists, set the cell's image to that, if not, download and cache the image, finally setting it upon completion
         if let cachedImage = cache.object(forKey: indexPath.row as AnyObject) as? UIImage {
             cell.articleImage.image = cachedImage
         } else {
@@ -65,5 +66,11 @@ class HomeScreenTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDat
         }
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewController?.articleForSegue = dataSource[indexPath.row]
+        viewController?.cachedImage = cache.object(forKey: indexPath.row as AnyObject) as? UIImage
+        viewController?.performSegue(withIdentifier: "articleDetail", sender: viewController)
     }
 }
