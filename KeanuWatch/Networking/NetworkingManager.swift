@@ -32,9 +32,7 @@ class NetworkingManager {
                             
                             do {
                                 let articleData: KeanuResults = try JSONDecoder().decode(KeanuResults.self, from: responseData)
-                                //print(articleData)
                                 completionHandler(articleData)
-                                //save data somewhere
                             } catch {
                                 print(error.localizedDescription)
                             }
