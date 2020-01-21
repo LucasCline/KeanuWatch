@@ -105,22 +105,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37141E4123D662E400CFD7F6 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				37141E4423D6653200CFD7F6 /* KeanuHeaderView.xib */,
-				37141E4623D666F300CFD7F6 /* KeanuHeaderView.swift */,
-				37141E4D23D7479C00CFD7F6 /* JSMatrixCodeRainView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		37141E4823D69ED300CFD7F6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				37141E4923D69EF600CFD7F6 /* UIViewController+KeanuWatch.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		37141E5123D7592E00CFD7F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				378728C623D4DB3500F1702A /* TableViewCells */,
+				37141E4423D6653200CFD7F6 /* KeanuHeaderView.xib */,
+				37141E4623D666F300CFD7F6 /* KeanuHeaderView.swift */,
+				37141E4D23D7479C00CFD7F6 /* JSMatrixCodeRainView.swift */,
+			);
+			name = Views;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		3787287823D3BCD900F1702A = {
@@ -148,11 +150,12 @@
 		3787288323D3BCD900F1702A /* KeanuWatch */ = {
 			isa = PBXGroup;
 			children = (
-				37141E4823D69ED300CFD7F6 /* Extensions */,
+				37141E5123D7592E00CFD7F6 /* Views */,
 				378728BE23D4B16700F1702A /* Models */,
-				378728BB23D3D07D00F1702A /* Networking */,
-				378728B723D3C9B100F1702A /* Storyboards */,
 				378728B623D3C99500F1702A /* ViewControllers */,
+				378728B723D3C9B100F1702A /* Storyboards */,
+				378728BB23D3D07D00F1702A /* Networking */,
+				37141E4823D69ED300CFD7F6 /* Extensions */,
 				3787288423D3BCD900F1702A /* AppDelegate.swift */,
 				3787288623D3BCD900F1702A /* SceneDelegate.swift */,
 				3787288D23D3BCDB00F1702A /* Assets.xcassets */,
@@ -185,8 +188,6 @@
 		378728B623D3C99500F1702A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				37141E4123D662E400CFD7F6 /* Views */,
-				378728C623D4DB3500F1702A /* TableViewCells */,
 				378728B823D3C9C400F1702A /* Delegates */,
 				378728B423D3C96400F1702A /* HomeScreenTableViewController.swift */,
 				378728CD23D61CCE00F1702A /* ArticleDetailViewController.swift */,

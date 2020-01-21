@@ -41,8 +41,8 @@ class KeanuHeaderView: UIView {
         headlineArticles = articles
         headerLabel.text = firstArticle.title
         headerImage.image = UIImage(named: "Keanu")
-        setAttributesForLabel()
         
+        setAttributesForLabel()
         cacheImagesForAllHeadlineArticles(cache: cache)
     }
     

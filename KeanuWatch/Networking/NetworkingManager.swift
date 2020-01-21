@@ -12,6 +12,7 @@ import Keys
 
 class NetworkingManager {
     private let apiKey = KeanuWatchKeys().newsAPIKey
+    
     func fetchNews(topic: String? = nil, completionHandler: @escaping (KeanuResults) -> ())  {
         let newsTopic: String = topic ?? "Keanu%20Reeves"
 

@@ -64,6 +64,8 @@ class HomeScreenTableViewController: UIViewController {
         }
         
         articleForSegue = delegate.headlineNewsSource[0]
+        cachedImage = delegate.cache.object(forKey: "Article0" as AnyObject) as? UIImage
+            
         performSegue(withIdentifier: "articleDetail", sender: self)
     }
 }
