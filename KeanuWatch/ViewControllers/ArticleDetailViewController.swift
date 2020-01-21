@@ -22,14 +22,16 @@ class ArticleDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setViewsFromArticleData()
+        setupGestures()
     }
     
     func setViewsFromArticleData() {
         articleTitle.text = article?.title
-        articleAuthor.text = article?.author
-        timePublished.text = article?.publishedAt
+        articleAuthor.text = NewsAPIFormatter.formatAuthor(author: article?.author)
+        timePublished.text = NewsAPIFormatter.formatTimestamp(timestamp: article?.publishedAt)
         articleText.text = article?.content
         articleLink.text = article?.url
+        //if there is no cached image, the image doesn't exist, so collapse that view to prevent an awkward space
         guard let cachedImage = self.cachedImage else {
             articleImage.image = nil
             imageHeight.constant = 0
@@ -37,5 +39,24 @@ class ArticleDetailViewController: UIViewController {
         }
         
         articleImage.image = cachedImage
+    }
+    
+    @objc func linkTapped(_ sender: UITapGestureRecognizer) {
+        guard let urlString = article?.url,
+            let url = URL(string: urlString) else {
+            print("No url found for link - cannot open link to article")
+            return
+        }
+        
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    func setupGestures() {
+        setupLinkTappedGesture()
+    }
+    
+    func setupLinkTappedGesture() {
+        let linkTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.linkTapped(_:)))
+        articleLink.addGestureRecognizer(linkTapGesture)
     }
 }

@@ -58,13 +58,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSo-eN-ahJ" customClass="KeanuHeaderView" customModule="KeanuWatch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="ol2-Mm-aMl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wZl-Zx-4RX" secondAttribute="bottom" id="6dh-fc-SIx"/>
                             <constraint firstItem="wZl-Zx-4RX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cf3-bG-WqO"/>
+                            <constraint firstItem="PSo-eN-ahJ" firstAttribute="top" secondItem="wZl-Zx-4RX" secondAttribute="top" id="IVq-Fs-WTF"/>
+                            <constraint firstItem="PSo-eN-ahJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OQb-7d-KOC"/>
                             <constraint firstItem="wZl-Zx-4RX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OVB-8p-PCG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wZl-Zx-4RX" secondAttribute="trailing" id="RVN-eY-D7e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PSo-eN-ahJ" secondAttribute="trailing" id="WC0-tj-UcY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -72,6 +82,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="rKH-Dd-imx"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="headerView" destination="PSo-eN-ahJ" id="eCN-eO-lLW"/>
                         <outlet property="newsTableView" destination="wZl-Zx-4RX" id="VJT-tp-WmG"/>
                         <segue destination="v4S-d2-mU9" kind="show" identifier="articleDetail" id="DKj-wT-OAW"/>
                     </connections>
@@ -88,6 +99,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KeanuBackground" translatesAutoresizingMaskIntoConstraints="NO" id="VZh-YN-5V6">
+                                <rect key="frame" x="0.0" y="422" width="414" height="628"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KeanuSpeedBackground" translatesAutoresizingMaskIntoConstraints="NO" id="iSR-BM-01H">
+                                <rect key="frame" x="0.0" y="22" width="414" height="200"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTM-tH-BcO">
                                 <rect key="frame" x="10" y="121" width="394" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -106,8 +123,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cD-Z1-AuK">
-                                <rect key="frame" x="10" y="432" width="394" height="21"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdh-k0-wjn">
+                                <rect key="frame" x="20" y="452.5" width="374" height="399.5"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cD-Z1-AuK">
+                                <rect key="frame" x="10" y="432" width="394" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -118,22 +143,18 @@
                                     <constraint firstAttribute="height" constant="200" id="zO8-i3-7SH"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hdh-k0-wjn">
-                                <rect key="frame" x="20" y="453" width="374" height="399"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="VZh-YN-5V6" firstAttribute="centerX" secondItem="1QH-aq-8Fu" secondAttribute="centerX" id="4YV-0w-OSQ"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3cD-Z1-AuK" secondAttribute="bottom" constant="100" id="4wL-T1-ncU"/>
+                            <constraint firstItem="lZC-bm-qTC" firstAttribute="top" secondItem="iSR-BM-01H" secondAttribute="bottom" id="5M4-gF-Tba"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="hdh-k0-wjn" secondAttribute="trailing" constant="20" id="9Be-bN-0zt"/>
                             <constraint firstItem="k23-g6-LhT" firstAttribute="centerX" secondItem="DTM-tH-BcO" secondAttribute="centerX" id="9Zr-Rt-DvB"/>
                             <constraint firstItem="DTM-tH-BcO" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" constant="10" id="Cmw-RS-JNz"/>
+                            <constraint firstItem="VZh-YN-5V6" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" id="DIS-Re-zC3"/>
                             <constraint firstItem="3cD-Z1-AuK" firstAttribute="top" secondItem="lZC-bm-qTC" secondAttribute="bottom" constant="10" id="E1I-na-Ijz"/>
+                            <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="VZh-YN-5V6" secondAttribute="trailing" id="Fai-QQ-OoQ"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="lZC-bm-qTC" secondAttribute="trailing" id="JCA-bV-riX"/>
                             <constraint firstItem="dgc-sZ-4Gg" firstAttribute="top" secondItem="DTM-tH-BcO" secondAttribute="bottom" constant="10" id="PLj-kJ-hE4"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="bottom" secondItem="hdh-k0-wjn" secondAttribute="bottom" constant="10" id="QKY-Ef-qUi"/>
@@ -144,8 +165,12 @@
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="DTM-tH-BcO" secondAttribute="trailing" constant="10" id="XxX-E2-NW3"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="3cD-Z1-AuK" secondAttribute="trailing" constant="10" id="aZt-eJ-jcC"/>
                             <constraint firstItem="DTM-tH-BcO" firstAttribute="top" secondItem="1QH-aq-8Fu" secondAttribute="top" constant="33" id="bH1-Ni-rrP"/>
+                            <constraint firstItem="VZh-YN-5V6" firstAttribute="top" secondItem="lZC-bm-qTC" secondAttribute="bottom" id="cIa-Pf-R4j"/>
+                            <constraint firstItem="iSR-BM-01H" firstAttribute="centerX" secondItem="1QH-aq-8Fu" secondAttribute="centerX" id="dnp-DR-4Uq"/>
+                            <constraint firstItem="iSR-BM-01H" firstAttribute="trailing" secondItem="1QH-aq-8Fu" secondAttribute="trailing" id="fhF-bS-9sx"/>
                             <constraint firstItem="hdh-k0-wjn" firstAttribute="top" secondItem="3cD-Z1-AuK" secondAttribute="bottom" id="lXy-tz-aAX"/>
                             <constraint firstItem="dgc-sZ-4Gg" firstAttribute="centerX" secondItem="DTM-tH-BcO" secondAttribute="centerX" id="vMI-RV-yED"/>
+                            <constraint firstItem="1QH-aq-8Fu" firstAttribute="leading" secondItem="iSR-BM-01H" secondAttribute="leading" id="z0A-6N-gas"/>
                             <constraint firstItem="k23-g6-LhT" firstAttribute="top" secondItem="dgc-sZ-4Gg" secondAttribute="bottom" constant="10" id="zEI-ZJ-BUJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1QH-aq-8Fu"/>
@@ -184,4 +209,8 @@
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="KeanuBackground" width="442" height="628"/>
+        <image name="KeanuSpeedBackground" width="600" height="200"/>
+    </resources>
 </document>

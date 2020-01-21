@@ -10,6 +10,8 @@ import UIKit
 
 class HomeScreenTableViewController: UIViewController {
     @IBOutlet weak var newsTableView: UITableView!
+    @IBOutlet weak var headerView: KeanuHeaderView!
+
     lazy var delegate = HomeScreenTableViewDelegate(self)
     var articleForSegue: KeanuArticle?
     var cachedImage: UIImage?
@@ -29,4 +31,5 @@ class HomeScreenTableViewController: UIViewController {
         destinationVC.article = articleForSegue
         destinationVC.cachedImage = cachedImage
     }
+
 }

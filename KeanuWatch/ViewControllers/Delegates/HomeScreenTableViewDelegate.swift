@@ -9,7 +9,9 @@
 import UIKit
 
 class HomeScreenTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDataSource {
-    var dataSource: [KeanuArticle] = []
+    var dataSource: [KeanuArticle] = [] //this contains ALL of the news sources
+    var tableViewNewsSource: [KeanuArticle] = [] //this contains the news sources to be displayed as rows in the table
+    var headlineNewsSource: [KeanuArticle] = [] //this contains the news sources to be displayed in the header view
     var cache: NSCache<AnyObject,AnyObject> = NSCache()
     weak var viewController: HomeScreenTableViewController?
     
@@ -23,12 +25,30 @@ class HomeScreenTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDat
         let networkingManager = NetworkingManager()
         networkingManager.fetchNews { (keanuResults) in
             self.dataSource = keanuResults.articles
+            
+            let allArticles = self.splitArticles(articles: self.dataSource)
+
+            //if there are more than three articles, then this will produce two arrays and we can have different articles in the header and table view
+            //if there are NOT more than three articles, we will duplicate the articles in the table view and header view
+            if allArticles.count == 2 {
+                self.headlineNewsSource = allArticles.first ?? []
+                self.tableViewNewsSource = allArticles.last ?? []
+            } else {
+                self.headlineNewsSource = self.dataSource
+                self.tableViewNewsSource = self.dataSource
+            }
+            
             self.viewController?.newsTableView.reloadData()
+            self.viewController?.headerView.setupViewsWith(articles: self.headlineNewsSource, cache: self.cache)
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count
+        return tableViewNewsSource.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 300
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -37,7 +57,7 @@ class HomeScreenTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDat
             return UITableViewCell()
         }
         
-        let article = dataSource[indexPath.row]
+        let article = tableViewNewsSource[indexPath.row]
 
         cell.title.text = article.title
         cell.articleImage.image = UIImage(named: "Keanu")
@@ -72,5 +92,19 @@ class HomeScreenTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDat
         viewController?.articleForSegue = dataSource[indexPath.row]
         viewController?.cachedImage = cache.object(forKey: indexPath.row as AnyObject) as? UIImage
         viewController?.performSegue(withIdentifier: "articleDetail", sender: viewController)
+    }
+    
+    func splitArticles(articles: [KeanuArticle]) -> [[KeanuArticle]] {
+        var headlineArticles: [KeanuArticle] = []
+        var tableViewArticles: [KeanuArticle] = []
+        for (n, article) in articles.enumerated() {
+            if n < 3 {
+                headlineArticles.append(article)
+            } else {
+                tableViewArticles.append(article)
+            }
+        }
+        
+        return [headlineArticles, tableViewArticles]
     }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37141E4023D64B0200CFD7F6 /* NewsAPIFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141E3F23D64B0200CFD7F6 /* NewsAPIFormatter.swift */; };
+		37141E4523D6653200CFD7F6 /* KeanuHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37141E4423D6653200CFD7F6 /* KeanuHeaderView.xib */; };
+		37141E4723D666F300CFD7F6 /* KeanuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141E4623D666F300CFD7F6 /* KeanuHeaderView.swift */; };
 		3787288523D3BCD900F1702A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288423D3BCD900F1702A /* AppDelegate.swift */; };
 		3787288723D3BCD900F1702A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288623D3BCD900F1702A /* SceneDelegate.swift */; };
 		3787288C23D3BCD900F1702A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3787288A23D3BCD900F1702A /* Main.storyboard */; };
@@ -42,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		2421510C90E9CFF89A9EABC8 /* Pods-KeanuWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeanuWatch.release.xcconfig"; path = "Target Support Files/Pods-KeanuWatch/Pods-KeanuWatch.release.xcconfig"; sourceTree = "<group>"; };
+		37141E3F23D64B0200CFD7F6 /* NewsAPIFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIFormatter.swift; sourceTree = "<group>"; };
+		37141E4423D6653200CFD7F6 /* KeanuHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeanuHeaderView.xib; sourceTree = "<group>"; };
+		37141E4623D666F300CFD7F6 /* KeanuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeanuHeaderView.swift; sourceTree = "<group>"; };
 		3787288123D3BCD900F1702A /* KeanuWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeanuWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3787288423D3BCD900F1702A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3787288623D3BCD900F1702A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37141E4123D662E400CFD7F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37141E4423D6653200CFD7F6 /* KeanuHeaderView.xib */,
+				37141E4623D666F300CFD7F6 /* KeanuHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3787287823D3BCD900F1702A = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +165,7 @@
 		378728B623D3C99500F1702A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				37141E4123D662E400CFD7F6 /* Views */,
 				378728C623D4DB3500F1702A /* TableViewCells */,
 				378728B823D3C9C400F1702A /* Delegates */,
 				378728B423D3C96400F1702A /* HomeScreenTableViewController.swift */,
@@ -186,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				378728BF23D4B17900F1702A /* KeanuArticle.swift */,
+				37141E3F23D64B0200CFD7F6 /* NewsAPIFormatter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37141E4523D6653200CFD7F6 /* KeanuHeaderView.xib in Resources */,
 				3787289123D3BCDB00F1702A /* LaunchScreen.storyboard in Resources */,
 				3787288E23D3BCDB00F1702A /* Assets.xcassets in Resources */,
 				3787288C23D3BCD900F1702A /* Main.storyboard in Resources */,
@@ -390,7 +408,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37141E4023D64B0200CFD7F6 /* NewsAPIFormatter.swift in Sources */,
 				3787288523D3BCD900F1702A /* AppDelegate.swift in Sources */,
+				37141E4723D666F300CFD7F6 /* KeanuHeaderView.swift in Sources */,
 				378728C823D4DB5400F1702A /* NewsArticleTableViewCell.swift in Sources */,
 				378728C023D4B17900F1702A /* KeanuArticle.swift in Sources */,
 				378728BA23D3C9DD00F1702A /* HomeScreenTableViewDelegate.swift in Sources */,
