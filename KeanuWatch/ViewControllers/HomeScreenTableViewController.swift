@@ -32,4 +32,11 @@ class HomeScreenTableViewController: UIViewController {
         destinationVC.cachedImage = cachedImage
     }
 
+    override func viewDidLayoutSubviews() {
+        if UIDevice.current.orientation.isLandscape {
+            headerView.isHidden = true
+        } else {
+            headerView.isHidden = false
+        }
+    }
 }
