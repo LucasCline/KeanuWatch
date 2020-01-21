@@ -10,6 +10,7 @@
 		37141E4023D64B0200CFD7F6 /* NewsAPIFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141E3F23D64B0200CFD7F6 /* NewsAPIFormatter.swift */; };
 		37141E4523D6653200CFD7F6 /* KeanuHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37141E4423D6653200CFD7F6 /* KeanuHeaderView.xib */; };
 		37141E4723D666F300CFD7F6 /* KeanuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141E4623D666F300CFD7F6 /* KeanuHeaderView.swift */; };
+		37141E4A23D69EF600CFD7F6 /* UIViewController+KeanuWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141E4923D69EF600CFD7F6 /* UIViewController+KeanuWatch.swift */; };
 		3787288523D3BCD900F1702A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288423D3BCD900F1702A /* AppDelegate.swift */; };
 		3787288723D3BCD900F1702A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288623D3BCD900F1702A /* SceneDelegate.swift */; };
 		3787288C23D3BCD900F1702A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3787288A23D3BCD900F1702A /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		37141E3F23D64B0200CFD7F6 /* NewsAPIFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIFormatter.swift; sourceTree = "<group>"; };
 		37141E4423D6653200CFD7F6 /* KeanuHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeanuHeaderView.xib; sourceTree = "<group>"; };
 		37141E4623D666F300CFD7F6 /* KeanuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeanuHeaderView.swift; sourceTree = "<group>"; };
+		37141E4923D69EF600CFD7F6 /* UIViewController+KeanuWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeanuWatch.swift"; sourceTree = "<group>"; };
 		3787288123D3BCD900F1702A /* KeanuWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeanuWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3787288423D3BCD900F1702A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3787288623D3BCD900F1702A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		37141E4823D69ED300CFD7F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37141E4923D69EF600CFD7F6 /* UIViewController+KeanuWatch.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3787287823D3BCD900F1702A = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 		3787288323D3BCD900F1702A /* KeanuWatch */ = {
 			isa = PBXGroup;
 			children = (
+				37141E4823D69ED300CFD7F6 /* Extensions */,
 				378728BE23D4B16700F1702A /* Models */,
 				378728BB23D3D07D00F1702A /* Networking */,
 				378728B723D3C9B100F1702A /* Storyboards */,
@@ -412,6 +423,7 @@
 				3787288523D3BCD900F1702A /* AppDelegate.swift in Sources */,
 				37141E4723D666F300CFD7F6 /* KeanuHeaderView.swift in Sources */,
 				378728C823D4DB5400F1702A /* NewsArticleTableViewCell.swift in Sources */,
+				37141E4A23D69EF600CFD7F6 /* UIViewController+KeanuWatch.swift in Sources */,
 				378728C023D4B17900F1702A /* KeanuArticle.swift in Sources */,
 				378728BA23D3C9DD00F1702A /* HomeScreenTableViewDelegate.swift in Sources */,
 				378728B523D3C96400F1702A /* HomeScreenTableViewController.swift in Sources */,

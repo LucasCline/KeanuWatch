@@ -7,16 +7,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Keanu Watch-->
+        <!--KEANU WATCH-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeScreenTableViewController" customModule="KeanuWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wZl-Zx-4RX">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsArticleCell" rowHeight="120" id="jiu-Xt-MHF" customClass="NewsArticleTableViewCell" customModule="KeanuWatch" customModuleProvider="target">
@@ -59,30 +59,41 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSo-eN-ahJ" customClass="KeanuHeaderView" customModule="KeanuWatch" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="ol2-Mm-aMl"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreenKeanu" translatesAutoresizingMaskIntoConstraints="NO" id="N69-Gc-gcA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.062745098039215685" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="N69-Gc-gcA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Ib-PK-GfL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wZl-Zx-4RX" secondAttribute="bottom" id="6dh-fc-SIx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N69-Gc-gcA" secondAttribute="bottom" id="8BJ-0K-Aot"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N69-Gc-gcA" secondAttribute="trailing" id="9F4-Rt-7mx"/>
                             <constraint firstItem="wZl-Zx-4RX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cf3-bG-WqO"/>
                             <constraint firstItem="PSo-eN-ahJ" firstAttribute="top" secondItem="wZl-Zx-4RX" secondAttribute="top" id="IVq-Fs-WTF"/>
                             <constraint firstItem="PSo-eN-ahJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OQb-7d-KOC"/>
                             <constraint firstItem="wZl-Zx-4RX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OVB-8p-PCG"/>
+                            <constraint firstItem="N69-Gc-gcA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QBD-D0-FCq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wZl-Zx-4RX" secondAttribute="trailing" id="RVN-eY-D7e"/>
+                            <constraint firstItem="N69-Gc-gcA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uip-gw-i0L"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PSo-eN-ahJ" secondAttribute="trailing" id="WC0-tj-UcY"/>
+                            <constraint firstItem="N69-Gc-gcA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="q1j-ij-kYJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Keanu Watch" id="zf1-eG-18z">
+                    <navigationItem key="navigationItem" title="KEANU WATCH" id="zf1-eG-18z">
                         <barButtonItem key="backBarButtonItem" title="Back" id="rKH-Dd-imx"/>
                     </navigationItem>
                     <connections>
                         <outlet property="headerView" destination="PSo-eN-ahJ" id="eCN-eO-lLW"/>
+                        <outlet property="maskingView" destination="N69-Gc-gcA" id="LW7-oh-9G6"/>
                         <outlet property="newsTableView" destination="wZl-Zx-4RX" id="VJT-tp-WmG"/>
                         <segue destination="v4S-d2-mU9" kind="show" identifier="articleDetail" id="DKj-wT-OAW"/>
                     </connections>
@@ -91,54 +102,54 @@
             </objects>
             <point key="canvasLocation" x="1170" y="139"/>
         </scene>
-        <!--Article Detail View Controller-->
+        <!--KEANU WATCH-->
         <scene sceneID="4qS-Wl-wiZ">
             <objects>
                 <viewController id="v4S-d2-mU9" customClass="ArticleDetailViewController" customModule="KeanuWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PoN-2I-lCc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KeanuBackground" translatesAutoresizingMaskIntoConstraints="NO" id="VZh-YN-5V6">
-                                <rect key="frame" x="0.0" y="422" width="414" height="628"/>
+                                <rect key="frame" x="0.0" y="334" width="414" height="628"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KeanuSpeedBackground" translatesAutoresizingMaskIntoConstraints="NO" id="iSR-BM-01H">
-                                <rect key="frame" x="0.0" y="22" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="-66" width="414" height="200"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTM-tH-BcO">
-                                <rect key="frame" x="10" y="121" width="394" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTM-tH-BcO">
+                                <rect key="frame" x="10" y="33" width="394" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgc-sZ-4Gg">
-                                <rect key="frame" x="181" y="160" width="52" height="21"/>
+                                <rect key="frame" x="10" y="72" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="publishedAt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k23-g6-LhT">
-                                <rect key="frame" x="161.5" y="191" width="91.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="publishedAt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k23-g6-LhT">
+                                <rect key="frame" x="10" y="103" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdh-k0-wjn">
-                                <rect key="frame" x="20" y="452.5" width="374" height="399.5"/>
+                                <rect key="frame" x="10" y="364.5" width="394" height="399.5"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cD-Z1-AuK">
-                                <rect key="frame" x="10" y="432" width="394" height="20.5"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="Article Link" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cD-Z1-AuK">
+                                <rect key="frame" x="10" y="344" width="394" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lZC-bm-qTC">
-                                <rect key="frame" x="0.0" y="222" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="134" width="414" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="zO8-i3-7SH"/>
                                 </constraints>
@@ -149,7 +160,8 @@
                             <constraint firstItem="VZh-YN-5V6" firstAttribute="centerX" secondItem="1QH-aq-8Fu" secondAttribute="centerX" id="4YV-0w-OSQ"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3cD-Z1-AuK" secondAttribute="bottom" constant="100" id="4wL-T1-ncU"/>
                             <constraint firstItem="lZC-bm-qTC" firstAttribute="top" secondItem="iSR-BM-01H" secondAttribute="bottom" id="5M4-gF-Tba"/>
-                            <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="hdh-k0-wjn" secondAttribute="trailing" constant="20" id="9Be-bN-0zt"/>
+                            <constraint firstItem="dgc-sZ-4Gg" firstAttribute="leading" secondItem="DTM-tH-BcO" secondAttribute="leading" id="8dr-If-Gcc"/>
+                            <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="hdh-k0-wjn" secondAttribute="trailing" constant="10" id="9Be-bN-0zt"/>
                             <constraint firstItem="k23-g6-LhT" firstAttribute="centerX" secondItem="DTM-tH-BcO" secondAttribute="centerX" id="9Zr-Rt-DvB"/>
                             <constraint firstItem="DTM-tH-BcO" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" constant="10" id="Cmw-RS-JNz"/>
                             <constraint firstItem="VZh-YN-5V6" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" id="DIS-Re-zC3"/>
@@ -161,21 +173,21 @@
                             <constraint firstItem="lZC-bm-qTC" firstAttribute="top" secondItem="k23-g6-LhT" secondAttribute="bottom" constant="10" id="Qq8-J8-N1P"/>
                             <constraint firstItem="lZC-bm-qTC" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" id="SfX-35-fDG"/>
                             <constraint firstItem="3cD-Z1-AuK" firstAttribute="leading" secondItem="DTM-tH-BcO" secondAttribute="leading" id="UYN-Rs-1kO"/>
-                            <constraint firstItem="hdh-k0-wjn" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" constant="20" id="Xi0-G8-Sda"/>
+                            <constraint firstItem="hdh-k0-wjn" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" constant="10" id="Xi0-G8-Sda"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="DTM-tH-BcO" secondAttribute="trailing" constant="10" id="XxX-E2-NW3"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="3cD-Z1-AuK" secondAttribute="trailing" constant="10" id="aZt-eJ-jcC"/>
+                            <constraint firstItem="k23-g6-LhT" firstAttribute="leading" secondItem="dgc-sZ-4Gg" secondAttribute="leading" id="ahQ-64-JSk"/>
                             <constraint firstItem="DTM-tH-BcO" firstAttribute="top" secondItem="1QH-aq-8Fu" secondAttribute="top" constant="33" id="bH1-Ni-rrP"/>
                             <constraint firstItem="VZh-YN-5V6" firstAttribute="top" secondItem="lZC-bm-qTC" secondAttribute="bottom" id="cIa-Pf-R4j"/>
                             <constraint firstItem="iSR-BM-01H" firstAttribute="centerX" secondItem="1QH-aq-8Fu" secondAttribute="centerX" id="dnp-DR-4Uq"/>
                             <constraint firstItem="iSR-BM-01H" firstAttribute="trailing" secondItem="1QH-aq-8Fu" secondAttribute="trailing" id="fhF-bS-9sx"/>
                             <constraint firstItem="hdh-k0-wjn" firstAttribute="top" secondItem="3cD-Z1-AuK" secondAttribute="bottom" id="lXy-tz-aAX"/>
-                            <constraint firstItem="dgc-sZ-4Gg" firstAttribute="centerX" secondItem="DTM-tH-BcO" secondAttribute="centerX" id="vMI-RV-yED"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="leading" secondItem="iSR-BM-01H" secondAttribute="leading" id="z0A-6N-gas"/>
                             <constraint firstItem="k23-g6-LhT" firstAttribute="top" secondItem="dgc-sZ-4Gg" secondAttribute="bottom" constant="10" id="zEI-ZJ-BUJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1QH-aq-8Fu"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aT4-fb-118"/>
+                    <navigationItem key="navigationItem" title="KEANU WATCH" id="aT4-fb-118"/>
                     <connections>
                         <outlet property="articleAuthor" destination="dgc-sZ-4Gg" id="xj0-dI-Rnb"/>
                         <outlet property="articleImage" destination="lZC-bm-qTC" id="kPl-O5-dw5"/>
@@ -195,9 +207,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yDU-wL-aNB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jhS-3n-5Ea">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="jhS-3n-5Ea">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.062745098040000002" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -212,5 +225,6 @@
     <resources>
         <image name="KeanuBackground" width="442" height="628"/>
         <image name="KeanuSpeedBackground" width="600" height="200"/>
+        <image name="SplashScreenKeanu" width="643" height="883"/>
     </resources>
 </document>

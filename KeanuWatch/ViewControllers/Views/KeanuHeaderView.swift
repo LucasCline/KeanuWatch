@@ -20,13 +20,11 @@ class KeanuHeaderView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
-        //Bundle.main.loadNibNamed("KeanuHeaderView", owner: self, options: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
-        //Bundle.main.loadNibNamed("KeanuHeaderView", owner: self, options: nil)
     }
     
     private func commonInit() {
@@ -42,9 +40,9 @@ class KeanuHeaderView: UIView {
             return
         }
         
-        self.headlineArticles = articles
-        self.headerLabel.text = firstArticle.title
-        self.headerImage.image = UIImage(named: "Keanu")
+        headlineArticles = articles
+        headerLabel.text = firstArticle.title
+        headerImage.image = UIImage(named: "Keanu")
         setAttributesForLabel()
         
         cacheImagesForAllHeadlineArticles(cache: cache)
@@ -65,9 +63,9 @@ class KeanuHeaderView: UIView {
                                 if let downloadedImage = UIImage(data: data) {
                                     //this if block is a debug block - just to test. needs to be removed or changed later
                                     if n == 0 {
-                                      self.headerImage.image = downloadedImage
+                                        self.headerImage.image = downloadedImage
                                     }
-                                    print("LUCAS - \(key)")
+                                    print("")
                                     cache.setObject(downloadedImage, forKey: key as AnyObject)
                                 }
                             }
@@ -83,8 +81,8 @@ class KeanuHeaderView: UIView {
         let textAttributes = [
           NSAttributedString.Key.strokeColor : UIColor.black,
           NSAttributedString.Key.foregroundColor : UIColor.white,
-          NSAttributedString.Key.strokeWidth : -6.0,
-          NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 20)]
+          NSAttributedString.Key.strokeWidth : -4.0,
+          NSAttributedString.Key.font : UIFont(name: "Optima-Bold", size: 22) ?? UIFont.systemFont(ofSize: 22)]
           as [NSAttributedString.Key : Any]
 
         headerLabel.attributedText = NSMutableAttributedString(string: headerLabel?.text ?? "Keanu", attributes: textAttributes)

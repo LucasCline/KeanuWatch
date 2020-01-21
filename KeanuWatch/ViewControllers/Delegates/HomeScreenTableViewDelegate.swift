@@ -40,6 +40,7 @@ class HomeScreenTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDat
             
             self.viewController?.newsTableView.reloadData()
             self.viewController?.headerView.setupViewsWith(articles: self.headlineNewsSource, cache: self.cache)
+            self.viewController?.hideMaskingView()
         }
     }
     
@@ -60,6 +61,9 @@ class HomeScreenTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDat
         let article = tableViewNewsSource[indexPath.row]
 
         cell.title.text = article.title
+        cell.title.font = UIFont(name: "Optima-BoldItalic", size: 18)
+        cell.title.textColor = UIColor.white
+        cell.backgroundColor = UIColor.clear
         cell.articleImage.image = UIImage(named: "Keanu")
         
         //if a cached version of the image exists, set the cell's image to that, if not, download and cache the image, finally setting it upon completion
@@ -89,9 +93,10 @@ class HomeScreenTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewController?.articleForSegue = dataSource[indexPath.row]
+        viewController?.articleForSegue = tableViewNewsSource[indexPath.row]
         viewController?.cachedImage = cache.object(forKey: indexPath.row as AnyObject) as? UIImage
         viewController?.performSegue(withIdentifier: "articleDetail", sender: viewController)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func splitArticles(articles: [KeanuArticle]) -> [[KeanuArticle]] {

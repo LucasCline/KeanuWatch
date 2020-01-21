@@ -11,7 +11,8 @@ import UIKit
 class HomeScreenTableViewController: UIViewController {
     @IBOutlet weak var newsTableView: UITableView!
     @IBOutlet weak var headerView: KeanuHeaderView!
-
+    @IBOutlet weak var maskingView: UIImageView!
+    
     lazy var delegate = HomeScreenTableViewDelegate(self)
     var articleForSegue: KeanuArticle?
     var cachedImage: UIImage?
@@ -20,6 +21,10 @@ class HomeScreenTableViewController: UIViewController {
         super.viewDidLoad()
         newsTableView.delegate = delegate
         newsTableView.dataSource = delegate
+        setupKeanuNavigationBar()
+        navigationController?.navigationBar.tintColor = UIColor.black
+        view.backgroundColor = UIColor(red: 0, green: 0.0745, blue: 0.1569, alpha: 1.0)
+        newsTableView.backgroundColor = UIColor.clear
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,6 +42,12 @@ class HomeScreenTableViewController: UIViewController {
             headerView.isHidden = true
         } else {
             headerView.isHidden = false
+        }
+    }
+    
+    func hideMaskingView() {
+        UIView.animate(withDuration: 3.0) {
+            self.maskingView.alpha = 0.0
         }
     }
 }

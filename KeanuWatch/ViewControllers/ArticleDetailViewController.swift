@@ -23,6 +23,11 @@ class ArticleDetailViewController: UIViewController {
         super.viewDidLoad()
         setViewsFromArticleData()
         setupGestures()
+        setupKeanuNavigationBar()
+        setupFonts()
+        view.backgroundColor = UIColor(red: 0, green: 0.0745, blue: 0.1569, alpha: 1.0)
+        navigationController?.navigationBar.tintColor = UIColor.white
+
     }
     
     func setViewsFromArticleData() {
@@ -30,7 +35,10 @@ class ArticleDetailViewController: UIViewController {
         articleAuthor.text = NewsAPIFormatter.formatAuthor(author: article?.author)
         timePublished.text = NewsAPIFormatter.formatTimestamp(timestamp: article?.publishedAt)
         articleText.text = article?.content
-        articleLink.text = article?.url
+        
+        if articleText.text.contains("Matrix") {
+            
+        }
         //if there is no cached image, the image doesn't exist, so collapse that view to prevent an awkward space
         guard let cachedImage = self.cachedImage else {
             articleImage.image = nil
@@ -58,5 +66,12 @@ class ArticleDetailViewController: UIViewController {
     func setupLinkTappedGesture() {
         let linkTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.linkTapped(_:)))
         articleLink.addGestureRecognizer(linkTapGesture)
+    }
+    
+    func setupFonts() {
+        articleTitle.font = UIFont(name: "Optima-Bold", size: 24) ?? UIFont.systemFont(ofSize: 24)
+        timePublished.font = UIFont(name: "Optima-Italic", size: 17) ?? UIFont.systemFont(ofSize: 17)
+        articleAuthor.font = UIFont(name: "Optima-Italic", size: 17) ?? UIFont.systemFont(ofSize: 17)
+        articleText.font = UIFont(name: "Optima-Regular", size: 15) ?? UIFont.systemFont(ofSize: 16)
     }
 }
