@@ -11,6 +11,7 @@
 		37141E4523D6653200CFD7F6 /* KeanuHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37141E4423D6653200CFD7F6 /* KeanuHeaderView.xib */; };
 		37141E4723D666F300CFD7F6 /* KeanuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141E4623D666F300CFD7F6 /* KeanuHeaderView.swift */; };
 		37141E4A23D69EF600CFD7F6 /* UIViewController+KeanuWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141E4923D69EF600CFD7F6 /* UIViewController+KeanuWatch.swift */; };
+		37141E4C23D72D1200CFD7F6 /* NewsAPIFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141E4B23D72D1200CFD7F6 /* NewsAPIFormatterTests.swift */; };
 		3787288523D3BCD900F1702A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288423D3BCD900F1702A /* AppDelegate.swift */; };
 		3787288723D3BCD900F1702A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288623D3BCD900F1702A /* SceneDelegate.swift */; };
 		3787288C23D3BCD900F1702A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3787288A23D3BCD900F1702A /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		37141E4423D6653200CFD7F6 /* KeanuHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeanuHeaderView.xib; sourceTree = "<group>"; };
 		37141E4623D666F300CFD7F6 /* KeanuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeanuHeaderView.swift; sourceTree = "<group>"; };
 		37141E4923D69EF600CFD7F6 /* UIViewController+KeanuWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeanuWatch.swift"; sourceTree = "<group>"; };
+		37141E4B23D72D1200CFD7F6 /* NewsAPIFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIFormatterTests.swift; sourceTree = "<group>"; };
 		3787288123D3BCD900F1702A /* KeanuWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeanuWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3787288423D3BCD900F1702A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3787288623D3BCD900F1702A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				3787289B23D3BCDB00F1702A /* KeanuWatchTests.swift */,
 				3787289D23D3BCDB00F1702A /* Info.plist */,
+				37141E4B23D72D1200CFD7F6 /* NewsAPIFormatterTests.swift */,
 			);
 			path = KeanuWatchTests;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37141E4C23D72D1200CFD7F6 /* NewsAPIFormatterTests.swift in Sources */,
 				3787289C23D3BCDB00F1702A /* KeanuWatchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

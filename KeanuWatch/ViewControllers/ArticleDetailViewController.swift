@@ -32,8 +32,8 @@ class ArticleDetailViewController: UIViewController {
     
     func setViewsFromArticleData() {
         articleTitle.text = article?.title
-        articleAuthor.text = NewsAPIFormatter.formatAuthor(author: article?.author)
-        timePublished.text = NewsAPIFormatter.formatTimestamp(timestamp: article?.publishedAt)
+        articleAuthor.text = NewsAPIFormatter().formatAuthor(author: article?.author)
+        timePublished.text = NewsAPIFormatter().formatTimestamp(timestamp: article?.publishedAt)
         articleText.text = article?.content
         
         if articleText.text.contains("Matrix") {
