@@ -157,6 +157,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZVX-AB-Vie" userLabel="LandscapeImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bQ-vn-YGh" customClass="JSMatrixCodeRainView" customModule="KeanuWatch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -176,9 +180,11 @@
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="bottom" secondItem="hdh-k0-wjn" secondAttribute="bottom" constant="10" id="QKY-Ef-qUi"/>
                             <constraint firstItem="lZC-bm-qTC" firstAttribute="top" secondItem="k23-g6-LhT" secondAttribute="bottom" constant="10" id="Qq8-J8-N1P"/>
                             <constraint firstItem="lZC-bm-qTC" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" id="SfX-35-fDG"/>
+                            <constraint firstItem="6bQ-vn-YGh" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" id="UVg-GB-0CB"/>
                             <constraint firstItem="3cD-Z1-AuK" firstAttribute="leading" secondItem="DTM-tH-BcO" secondAttribute="leading" id="UYN-Rs-1kO"/>
                             <constraint firstItem="hdh-k0-wjn" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" constant="10" id="Xi0-G8-Sda"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="DTM-tH-BcO" secondAttribute="trailing" constant="10" id="XxX-E2-NW3"/>
+                            <constraint firstItem="6bQ-vn-YGh" firstAttribute="top" secondItem="1QH-aq-8Fu" secondAttribute="top" id="Yi9-0x-Ebp"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="3cD-Z1-AuK" secondAttribute="trailing" constant="10" id="aZt-eJ-jcC"/>
                             <constraint firstItem="k23-g6-LhT" firstAttribute="leading" secondItem="dgc-sZ-4Gg" secondAttribute="leading" id="ahQ-64-JSk"/>
                             <constraint firstItem="DTM-tH-BcO" firstAttribute="top" secondItem="1QH-aq-8Fu" secondAttribute="top" constant="33" id="bH1-Ni-rrP"/>
@@ -188,7 +194,9 @@
                             <constraint firstItem="iSR-BM-01H" firstAttribute="trailing" secondItem="1QH-aq-8Fu" secondAttribute="trailing" id="fhF-bS-9sx"/>
                             <constraint firstItem="ZVX-AB-Vie" firstAttribute="top" secondItem="1QH-aq-8Fu" secondAttribute="top" id="g8H-f0-uqs"/>
                             <constraint firstItem="hdh-k0-wjn" firstAttribute="top" secondItem="3cD-Z1-AuK" secondAttribute="bottom" id="lXy-tz-aAX"/>
+                            <constraint firstItem="1QH-aq-8Fu" firstAttribute="bottom" secondItem="6bQ-vn-YGh" secondAttribute="bottom" id="ltq-8k-LS4"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="bottom" secondItem="ZVX-AB-Vie" secondAttribute="bottom" id="muZ-aD-byX"/>
+                            <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="6bQ-vn-YGh" secondAttribute="trailing" id="veK-fk-9RT"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="leading" secondItem="iSR-BM-01H" secondAttribute="leading" id="z0A-6N-gas"/>
                             <constraint firstItem="k23-g6-LhT" firstAttribute="top" secondItem="dgc-sZ-4Gg" secondAttribute="bottom" constant="10" id="zEI-ZJ-BUJ"/>
                         </constraints>
@@ -203,6 +211,7 @@
                         <outlet property="articleTitle" destination="DTM-tH-BcO" id="scq-v7-9q3"/>
                         <outlet property="imageHeight" destination="zO8-i3-7SH" id="61A-i1-dun"/>
                         <outlet property="landscapeImageView" destination="ZVX-AB-Vie" id="SN2-oU-E6n"/>
+                        <outlet property="matrixLettersView" destination="6bQ-vn-YGh" id="GIp-6f-rNq"/>
                         <outlet property="timePublished" destination="k23-g6-LhT" id="DyJ-zw-Gnf"/>
                     </connections>
                 </viewController>

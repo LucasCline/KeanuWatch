@@ -12,6 +12,8 @@
 		37141E4723D666F300CFD7F6 /* KeanuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141E4623D666F300CFD7F6 /* KeanuHeaderView.swift */; };
 		37141E4A23D69EF600CFD7F6 /* UIViewController+KeanuWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141E4923D69EF600CFD7F6 /* UIViewController+KeanuWatch.swift */; };
 		37141E4C23D72D1200CFD7F6 /* NewsAPIFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141E4B23D72D1200CFD7F6 /* NewsAPIFormatterTests.swift */; };
+		37141E4E23D7479C00CFD7F6 /* JSMatrixCodeRainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141E4D23D7479C00CFD7F6 /* JSMatrixCodeRainView.swift */; };
+		37141E5023D7482400CFD7F6 /* matrixcode.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37141E4F23D7482400CFD7F6 /* matrixcode.ttf */; };
 		3787288523D3BCD900F1702A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288423D3BCD900F1702A /* AppDelegate.swift */; };
 		3787288723D3BCD900F1702A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787288623D3BCD900F1702A /* SceneDelegate.swift */; };
 		3787288C23D3BCD900F1702A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3787288A23D3BCD900F1702A /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		37141E4623D666F300CFD7F6 /* KeanuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeanuHeaderView.swift; sourceTree = "<group>"; };
 		37141E4923D69EF600CFD7F6 /* UIViewController+KeanuWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeanuWatch.swift"; sourceTree = "<group>"; };
 		37141E4B23D72D1200CFD7F6 /* NewsAPIFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIFormatterTests.swift; sourceTree = "<group>"; };
+		37141E4D23D7479C00CFD7F6 /* JSMatrixCodeRainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSMatrixCodeRainView.swift; sourceTree = "<group>"; };
+		37141E4F23D7482400CFD7F6 /* matrixcode.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = matrixcode.ttf; sourceTree = "<group>"; };
 		3787288123D3BCD900F1702A /* KeanuWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeanuWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3787288423D3BCD900F1702A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3787288623D3BCD900F1702A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			children = (
 				37141E4423D6653200CFD7F6 /* KeanuHeaderView.xib */,
 				37141E4623D666F300CFD7F6 /* KeanuHeaderView.swift */,
+				37141E4D23D7479C00CFD7F6 /* JSMatrixCodeRainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				3787288623D3BCD900F1702A /* SceneDelegate.swift */,
 				3787288D23D3BCDB00F1702A /* Assets.xcassets */,
 				3787288F23D3BCDB00F1702A /* LaunchScreen.storyboard */,
+				37141E4F23D7482400CFD7F6 /* matrixcode.ttf */,
 				3787289223D3BCDB00F1702A /* Info.plist */,
 			);
 			path = KeanuWatch;
@@ -354,6 +360,7 @@
 			files = (
 				37141E4523D6653200CFD7F6 /* KeanuHeaderView.xib in Resources */,
 				3787289123D3BCDB00F1702A /* LaunchScreen.storyboard in Resources */,
+				37141E5023D7482400CFD7F6 /* matrixcode.ttf in Resources */,
 				3787288E23D3BCDB00F1702A /* Assets.xcassets in Resources */,
 				3787288C23D3BCD900F1702A /* Main.storyboard in Resources */,
 			);
@@ -433,6 +440,7 @@
 				378728BD23D3D12700F1702A /* NetworkingManager.swift in Sources */,
 				378728CE23D61CCE00F1702A /* ArticleDetailViewController.swift in Sources */,
 				3787288723D3BCD900F1702A /* SceneDelegate.swift in Sources */,
+				37141E4E23D7479C00CFD7F6 /* JSMatrixCodeRainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

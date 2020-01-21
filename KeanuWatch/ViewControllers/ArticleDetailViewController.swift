@@ -17,6 +17,7 @@ class ArticleDetailViewController: UIViewController {
     @IBOutlet weak var articleImage: UIImageView!
     @IBOutlet weak var imageHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var matrixLettersView: JSMatrixCodeRainView!
     @IBOutlet weak var landscapeImageView: UIImageView!
     var article: KeanuArticle?
     var cachedImage: UIImage?
@@ -27,6 +28,7 @@ class ArticleDetailViewController: UIViewController {
         setupGestures()
         setupKeanuNavigationBar()
         setupFonts()
+        matrixLettersView.isHidden = true
         view.backgroundColor = UIColor(red: 0, green: 0.0745, blue: 0.1569, alpha: 1.0)
         navigationController?.navigationBar.tintColor = UIColor.white
     }
@@ -38,7 +40,9 @@ class ArticleDetailViewController: UIViewController {
         articleText.text = article?.content
         
         if articleText.text.contains("Matrix") {
-            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                self.matrixLettersView.isHidden = false
+            }
         }
         //if there is no cached image, the image doesn't exist, so collapse that view to prevent an awkward space
         guard let cachedImage = self.cachedImage else {
