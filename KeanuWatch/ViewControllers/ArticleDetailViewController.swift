@@ -16,6 +16,8 @@ class ArticleDetailViewController: UIViewController {
     @IBOutlet weak var articleLink: UILabel!
     @IBOutlet weak var articleImage: UIImageView!
     @IBOutlet weak var imageHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var landscapeImageView: UIImageView!
     var article: KeanuArticle?
     var cachedImage: UIImage?
     
@@ -42,11 +44,13 @@ class ArticleDetailViewController: UIViewController {
         //if there is no cached image, the image doesn't exist, so collapse that view to prevent an awkward space
         guard let cachedImage = self.cachedImage else {
             articleImage.image = nil
+            landscapeImageView.image = nil
             imageHeight.constant = 0
             return
         }
         
         articleImage.image = cachedImage
+        landscapeImageView.image = cachedImage
     }
     
     @objc func linkTapped(_ sender: UITapGestureRecognizer) {
@@ -73,5 +77,13 @@ class ArticleDetailViewController: UIViewController {
         timePublished.font = UIFont(name: "Optima-Italic", size: 17) ?? UIFont.systemFont(ofSize: 17)
         articleAuthor.font = UIFont(name: "Optima-Italic", size: 17) ?? UIFont.systemFont(ofSize: 17)
         articleText.font = UIFont(name: "Optima-Regular", size: 15) ?? UIFont.systemFont(ofSize: 16)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        if UIDevice.current.orientation.isLandscape {
+            landscapeImageView.isHidden = false
+        } else {
+            landscapeImageView.isHidden = true
+        }
     }
 }

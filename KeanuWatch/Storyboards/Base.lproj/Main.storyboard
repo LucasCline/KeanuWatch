@@ -154,6 +154,9 @@
                                     <constraint firstAttribute="height" constant="200" id="zO8-i3-7SH"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZVX-AB-Vie" userLabel="LandscapeImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -165,6 +168,7 @@
                             <constraint firstItem="k23-g6-LhT" firstAttribute="centerX" secondItem="DTM-tH-BcO" secondAttribute="centerX" id="9Zr-Rt-DvB"/>
                             <constraint firstItem="DTM-tH-BcO" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" constant="10" id="Cmw-RS-JNz"/>
                             <constraint firstItem="VZh-YN-5V6" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" id="DIS-Re-zC3"/>
+                            <constraint firstItem="ZVX-AB-Vie" firstAttribute="leading" secondItem="1QH-aq-8Fu" secondAttribute="leading" id="DfP-WG-OSl"/>
                             <constraint firstItem="3cD-Z1-AuK" firstAttribute="top" secondItem="lZC-bm-qTC" secondAttribute="bottom" constant="10" id="E1I-na-Ijz"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="VZh-YN-5V6" secondAttribute="trailing" id="Fai-QQ-OoQ"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="lZC-bm-qTC" secondAttribute="trailing" id="JCA-bV-riX"/>
@@ -180,8 +184,11 @@
                             <constraint firstItem="DTM-tH-BcO" firstAttribute="top" secondItem="1QH-aq-8Fu" secondAttribute="top" constant="33" id="bH1-Ni-rrP"/>
                             <constraint firstItem="VZh-YN-5V6" firstAttribute="top" secondItem="lZC-bm-qTC" secondAttribute="bottom" id="cIa-Pf-R4j"/>
                             <constraint firstItem="iSR-BM-01H" firstAttribute="centerX" secondItem="1QH-aq-8Fu" secondAttribute="centerX" id="dnp-DR-4Uq"/>
+                            <constraint firstItem="1QH-aq-8Fu" firstAttribute="trailing" secondItem="ZVX-AB-Vie" secondAttribute="trailing" id="f6d-eY-oMw"/>
                             <constraint firstItem="iSR-BM-01H" firstAttribute="trailing" secondItem="1QH-aq-8Fu" secondAttribute="trailing" id="fhF-bS-9sx"/>
+                            <constraint firstItem="ZVX-AB-Vie" firstAttribute="top" secondItem="1QH-aq-8Fu" secondAttribute="top" id="g8H-f0-uqs"/>
                             <constraint firstItem="hdh-k0-wjn" firstAttribute="top" secondItem="3cD-Z1-AuK" secondAttribute="bottom" id="lXy-tz-aAX"/>
+                            <constraint firstItem="1QH-aq-8Fu" firstAttribute="bottom" secondItem="ZVX-AB-Vie" secondAttribute="bottom" id="muZ-aD-byX"/>
                             <constraint firstItem="1QH-aq-8Fu" firstAttribute="leading" secondItem="iSR-BM-01H" secondAttribute="leading" id="z0A-6N-gas"/>
                             <constraint firstItem="k23-g6-LhT" firstAttribute="top" secondItem="dgc-sZ-4Gg" secondAttribute="bottom" constant="10" id="zEI-ZJ-BUJ"/>
                         </constraints>
@@ -195,6 +202,7 @@
                         <outlet property="articleText" destination="hdh-k0-wjn" id="GXW-rk-JBC"/>
                         <outlet property="articleTitle" destination="DTM-tH-BcO" id="scq-v7-9q3"/>
                         <outlet property="imageHeight" destination="zO8-i3-7SH" id="61A-i1-dun"/>
+                        <outlet property="landscapeImageView" destination="ZVX-AB-Vie" id="SN2-oU-E6n"/>
                         <outlet property="timePublished" destination="k23-g6-LhT" id="DyJ-zw-Gnf"/>
                     </connections>
                 </viewController>
