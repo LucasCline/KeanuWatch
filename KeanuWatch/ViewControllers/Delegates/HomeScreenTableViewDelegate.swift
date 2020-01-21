@@ -103,7 +103,7 @@ class HomeScreenTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDat
         var headlineArticles: [KeanuArticle] = []
         var tableViewArticles: [KeanuArticle] = []
         for (n, article) in articles.enumerated() {
-            if n < 3 {
+            if n < 1 {
                 headlineArticles.append(article)
             } else {
                 tableViewArticles.append(article)

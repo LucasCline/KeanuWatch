@@ -19,12 +19,21 @@ class HomeScreenTableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupKeanuNavigationBar()
+        setupGestures()
         newsTableView.delegate = delegate
         newsTableView.dataSource = delegate
-        setupKeanuNavigationBar()
+        newsTableView.backgroundColor = UIColor.clear
         navigationController?.navigationBar.tintColor = UIColor.black
         view.backgroundColor = UIColor(red: 0, green: 0.0745, blue: 0.1569, alpha: 1.0)
-        newsTableView.backgroundColor = UIColor.clear
+    }
+    
+    override func viewDidLayoutSubviews() {
+        if UIDevice.current.orientation.isLandscape {
+            headerView.isHidden = true
+        } else {
+            headerView.isHidden = false
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -36,18 +45,29 @@ class HomeScreenTableViewController: UIViewController {
         destinationVC.article = articleForSegue
         destinationVC.cachedImage = cachedImage
     }
-
-    override func viewDidLayoutSubviews() {
-        if UIDevice.current.orientation.isLandscape {
-            headerView.isHidden = true
-        } else {
-            headerView.isHidden = false
-        }
-    }
     
     func hideMaskingView() {
         UIView.animate(withDuration: 3.0) {
             self.maskingView.alpha = 0.0
         }
+    }
+    
+    func setupGestures() {
+        setupHeadlineArticleTappedGesture()
+    }
+    
+    func setupHeadlineArticleTappedGesture() {
+        let headlineArticleTapped = UITapGestureRecognizer(target: self, action: #selector(self.headlineArticleTapped(_:)))
+        headerView.addGestureRecognizer(headlineArticleTapped)
+    }
+    
+    @objc func headlineArticleTapped(_ sender: UITapGestureRecognizer) {
+        guard delegate.headlineNewsSource.count > 0 else {
+            print("No headline article found - will not transition to details screen")
+            return
+        }
+        
+        articleForSegue = delegate.headlineNewsSource[0]
+        performSegue(withIdentifier: "articleDetail", sender: self)
     }
 }

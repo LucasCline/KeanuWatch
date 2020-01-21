@@ -29,7 +29,6 @@ class ArticleDetailViewController: UIViewController {
         setupFonts()
         view.backgroundColor = UIColor(red: 0, green: 0.0745, blue: 0.1569, alpha: 1.0)
         navigationController?.navigationBar.tintColor = UIColor.white
-
     }
     
     func setViewsFromArticleData() {

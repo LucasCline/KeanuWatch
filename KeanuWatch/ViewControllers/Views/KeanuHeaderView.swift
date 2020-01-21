@@ -13,9 +13,7 @@ class KeanuHeaderView: UIView {
     @IBOutlet weak var headerImage: UIImageView!
     @IBOutlet weak var headerLabel: UILabel!
     var headlineArticles: [KeanuArticle] = []
-    var cacheKeys: [String] = ["Article0",
-                               "Article1",
-                               "Article2"]
+    var cacheKeys: [String] = ["Article0"]
 
     override init(frame: CGRect) {
         super.init(frame: frame)
