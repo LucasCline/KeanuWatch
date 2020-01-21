@@ -26,7 +26,7 @@ class NewsAPIFormatterTests: XCTestCase {
         let input: String? = nil
         let result = sut.formatTimestamp(timestamp: input)
         
-        XCTAssert(result == nil)
+        XCTAssert(result == "Date published: N/A")
     }
     
     func testFormattingForExpectedInputOfPublishedAt() {
@@ -75,7 +75,7 @@ class NewsAPIFormatterTests: XCTestCase {
         let input: String? = nil
         let result = sut.formatAuthor(author: input)
         
-        XCTAssert(result == nil)
+        XCTAssert(result == "Author: N/A")
     }
     
     func testFormattingForAuthorName() {

@@ -33,7 +33,15 @@ class ArticleDetailViewController: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.white
     }
     
-    func setViewsFromArticleData() {
+    override func viewDidLayoutSubviews() {
+        if UIDevice.current.orientation.isLandscape {
+            landscapeImageView.isHidden = false
+        } else {
+            landscapeImageView.isHidden = true
+        }
+    }
+    
+    private func setViewsFromArticleData() {
         articleTitle.text = article?.title
         articleAuthor.text = NewsAPIFormatter().formatAuthor(author: article?.author)
         timePublished.text = NewsAPIFormatter().formatTimestamp(timestamp: article?.publishedAt)
@@ -44,11 +52,10 @@ class ArticleDetailViewController: UIViewController {
                 self.matrixLettersView.isHidden = false
             }
         }
+        
         //if there is no cached image, the image doesn't exist, so collapse that view to prevent an awkward space
         guard let cachedImage = self.cachedImage else {
-            articleImage.image = nil
-            landscapeImageView.image = nil
-            imageHeight.constant = 0
+            collapseImageView()
             return
         }
         
@@ -56,7 +63,29 @@ class ArticleDetailViewController: UIViewController {
         landscapeImageView.image = cachedImage
     }
     
-    @objc func linkTapped(_ sender: UITapGestureRecognizer) {
+    private func collapseImageView() {
+        articleImage.image = nil
+        landscapeImageView.image = nil
+        imageHeight.constant = 0
+    }
+    
+    private func setupGestures() {
+        setupLinkTappedGesture()
+    }
+    
+    private func setupLinkTappedGesture() {
+        let linkTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.linkTapped(_:)))
+        articleLink.addGestureRecognizer(linkTapGesture)
+    }
+    
+    private func setupFonts() {
+        articleTitle.font = UIFont(name: "Optima-Bold", size: 24) ?? UIFont.systemFont(ofSize: 24)
+        timePublished.font = UIFont(name: "Optima-Italic", size: 17) ?? UIFont.systemFont(ofSize: 17)
+        articleAuthor.font = UIFont(name: "Optima-Italic", size: 17) ?? UIFont.systemFont(ofSize: 17)
+        articleText.font = UIFont(name: "Optima-Regular", size: 15) ?? UIFont.systemFont(ofSize: 16)
+    }
+    
+    @objc private func linkTapped(_ sender: UITapGestureRecognizer) {
         guard let urlString = article?.url,
             let url = URL(string: urlString) else {
             print("No url found for link - cannot open link to article")
@@ -64,29 +93,5 @@ class ArticleDetailViewController: UIViewController {
         }
         
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
-    }
-    
-    func setupGestures() {
-        setupLinkTappedGesture()
-    }
-    
-    func setupLinkTappedGesture() {
-        let linkTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.linkTapped(_:)))
-        articleLink.addGestureRecognizer(linkTapGesture)
-    }
-    
-    func setupFonts() {
-        articleTitle.font = UIFont(name: "Optima-Bold", size: 24) ?? UIFont.systemFont(ofSize: 24)
-        timePublished.font = UIFont(name: "Optima-Italic", size: 17) ?? UIFont.systemFont(ofSize: 17)
-        articleAuthor.font = UIFont(name: "Optima-Italic", size: 17) ?? UIFont.systemFont(ofSize: 17)
-        articleText.font = UIFont(name: "Optima-Regular", size: 15) ?? UIFont.systemFont(ofSize: 16)
-    }
-    
-    override func viewDidLayoutSubviews() {
-        if UIDevice.current.orientation.isLandscape {
-            landscapeImageView.isHidden = false
-        } else {
-            landscapeImageView.isHidden = true
-        }
     }
 }

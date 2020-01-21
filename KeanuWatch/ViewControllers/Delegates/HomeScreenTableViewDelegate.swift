@@ -21,29 +21,6 @@ class HomeScreenTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDat
         fetchDataSource()
     }
     
-    private func fetchDataSource() {
-        let networkingManager = NetworkingManager()
-        networkingManager.fetchNews { (keanuResults) in
-            self.dataSource = keanuResults.articles
-            
-            let allArticles = self.splitArticles(articles: self.dataSource)
-
-            //if there are more than three articles, then this will produce two arrays and we can have different articles in the header and table view
-            //if there are NOT more than three articles, we will duplicate the articles in the table view and header view
-            if allArticles.count == 2 {
-                self.headlineNewsSource = allArticles.first ?? []
-                self.tableViewNewsSource = allArticles.last ?? []
-            } else {
-                self.headlineNewsSource = self.dataSource
-                self.tableViewNewsSource = self.dataSource
-            }
-            
-            self.viewController?.newsTableView.reloadData()
-            self.viewController?.headerView.setupViewsWith(articles: self.headlineNewsSource, cache: self.cache)
-            self.viewController?.hideMaskingView()
-        }
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableViewNewsSource.count
     }
@@ -99,7 +76,31 @@ class HomeScreenTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDat
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func splitArticles(articles: [KeanuArticle]) -> [[KeanuArticle]] {
+    private func fetchDataSource() {
+        let networkingManager = NetworkingManager()
+        networkingManager.fetchNews { (keanuResults) in
+            self.dataSource = keanuResults.articles
+            
+            let allArticles = self.splitArticles(articles: self.dataSource)
+
+            //if there is more than one article, then this will produce two arrays and we can have different articles in the header and table view
+            //if there is NOT more than one article, we will duplicate the articles in the table view and header view
+            if allArticles.count == 2 {
+                self.headlineNewsSource = allArticles.first ?? []
+                self.tableViewNewsSource = allArticles.last ?? []
+            } else {
+                self.headlineNewsSource = self.dataSource
+                self.tableViewNewsSource = self.dataSource
+            }
+            
+            self.viewController?.newsTableView.reloadData()
+            self.viewController?.headerView.setupViewsWith(articles: self.headlineNewsSource, cache: self.cache)
+            self.viewController?.hideMaskingView()
+        }
+    }
+    
+    
+    private func splitArticles(articles: [KeanuArticle]) -> [[KeanuArticle]] {
         var headlineArticles: [KeanuArticle] = []
         var tableViewArticles: [KeanuArticle] = []
         for (n, article) in articles.enumerated() {

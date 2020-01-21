@@ -29,11 +29,7 @@ class HomeScreenTableViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        if UIDevice.current.orientation.isLandscape {
-            headerView.isHidden = true
-        } else {
-            headerView.isHidden = false
-        }
+        headerView.isHidden = UIDevice.current.orientation.isLandscape ? true : false
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -52,16 +48,16 @@ class HomeScreenTableViewController: UIViewController {
         }
     }
     
-    func setupGestures() {
+    private func setupGestures() {
         setupHeadlineArticleTappedGesture()
     }
     
-    func setupHeadlineArticleTappedGesture() {
+    private func setupHeadlineArticleTappedGesture() {
         let headlineArticleTapped = UITapGestureRecognizer(target: self, action: #selector(self.headlineArticleTapped(_:)))
         headerView.addGestureRecognizer(headlineArticleTapped)
     }
     
-    @objc func headlineArticleTapped(_ sender: UITapGestureRecognizer) {
+    @objc private func headlineArticleTapped(_ sender: UITapGestureRecognizer) {
         guard delegate.headlineNewsSource.count > 0 else {
             print("No headline article found - will not transition to details screen")
             return

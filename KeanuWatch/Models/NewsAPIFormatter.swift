@@ -14,7 +14,7 @@ struct NewsAPIFormatter {
         //make sure timestamp exists
         guard let timestamp = timestamp else {
             print("Timestamp was nil - unable to format")
-            return nil
+            return "Date published: N/A"
         }
         
         // This first block breaks apart the timestamp at the "T", which separates the date from the time
@@ -38,7 +38,7 @@ struct NewsAPIFormatter {
     func formatAuthor(author: String?) -> String? {
         guard let author = author else {
             print("Author was nil - unable to format")
-            return nil
+            return "Author: N/A"
         }
         
         return "Author: \(author)"

@@ -46,7 +46,8 @@ class KeanuHeaderView: UIView {
         cacheImagesForAllHeadlineArticles(cache: cache)
     }
     
-    func cacheImagesForAllHeadlineArticles(cache: NSCache<AnyObject,AnyObject>) {
+    //This method will iterate through the array of cacheKeys and cache the headline articles' images that are associated with the corresponding key
+    private func cacheImagesForAllHeadlineArticles(cache: NSCache<AnyObject,AnyObject>) {
         for (n, key) in cacheKeys.enumerated() {
             if let cachedImage = cache.object(forKey: key as AnyObject) as? UIImage {
                 self.headerImage.image = cachedImage
@@ -75,7 +76,7 @@ class KeanuHeaderView: UIView {
         }
     }
     
-    func setAttributesForLabel() {
+    private func setAttributesForLabel() {
         let textAttributes = [
           NSAttributedString.Key.strokeColor : UIColor.black,
           NSAttributedString.Key.foregroundColor : UIColor.white,
